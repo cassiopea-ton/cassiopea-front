@@ -4,7 +4,7 @@ import './ConsumerInfo.scss';
 function ConsumerInfo() {
   return (
     <div>
-
+        ConsumerInfo
     </div>
   );
 }
