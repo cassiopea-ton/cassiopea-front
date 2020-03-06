@@ -4,7 +4,7 @@ import './OracleInfo.scss';
 function OracleInfo() {
   return (
     <div>
-
+        OracleInfo
     </div>
   );
 }

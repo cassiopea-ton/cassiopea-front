@@ -4,7 +4,7 @@ import './Statistics.scss';
 function Statistics() {
   return (
     <div>
-
+        Statistics
     </div>
   );
 }
