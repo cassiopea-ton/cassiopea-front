@@ -1,0 +1,20 @@
+// Navigation styling
+.nav {
+    background-color: #0A195A;
+    height: 100px;
+    padding:0 30px;
+    .menu {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        &__item {
+            margin:25px 25px;
+        }
+        &__link {
+            text-decoration: none;
+            color: #FFF;
+            font-size: 24px;
+            line-height: 29px;
+         }
+    }
+}

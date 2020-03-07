@@ -1,0 +1,24 @@
+.email__input{
+    display: flex;
+    justify-content: center;
+    input{
+        background: #F0F1F4;
+        border-radius: 15px;
+        height:68px;
+        border: 0px;
+        width: 400px;
+        margin-right:-40px;
+    }
+    button{
+        width: 70px;
+        height: 70px;
+        background: #6882A1;
+        border-radius: 15px;    
+    }
+    input[type="text"] {
+        font-size: 24px;
+        line-height: 29px;
+        display: flex;
+        border: 0px;
+    }
+}
