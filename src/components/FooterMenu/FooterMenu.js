@@ -7,7 +7,7 @@ const  FooterMenu= () =>
 <div className="footer__menu">
 
     <div className="footer_column">
-      <Link className="#" to="#">Join</Link>
+      <Link className="column__article" to="#">Join</Link>
         <ul>
           <li>
           <Link className="column__items" to="#">Become a provider</Link></li>
@@ -17,7 +17,7 @@ const  FooterMenu= () =>
         </ul>
     </div>
     <div className="footer_column">
-      <Link className="#" to="#">Learn more</Link>
+      <Link className="column__article" to="#">Learn more</Link>
         <ul>
           <li><Link className="" to="#">Provider instruction</Link></li>
           <li><Link className="column__items" to="#">Github</Link></li>
@@ -30,7 +30,7 @@ const  FooterMenu= () =>
           <Route path="/stats" />
           <Route  path="/howto/oracle" />
           <Route path="/howto/consumer"  />
-        </Switch>
+    </Switch>
 </div>
 </Router> 
 

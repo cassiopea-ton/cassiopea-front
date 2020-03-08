@@ -1,11 +1,26 @@
 .footer__menu {
     display: flex;
     justify-content: center;
+    margin-bottom: 60px;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    .column__article {
+        display: block;
+        margin-bottom: 40px;
+    }
     .footer_column {
-        margin:0px 75px;
+        margin: 0px 100px;
+        z-index: 2;
+
     }
     a{
+       padding: 15px 0;
+       display: block;
        text-decoration: none;
+    }
+    a:link,a:visited,a:hover{
+        color: #6882A1;
     }
    
 }   

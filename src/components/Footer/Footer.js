@@ -1,14 +1,15 @@
 import React from 'react';
-import FooterSubmit from '../FooterSubmit/FooterSubmit';
+import SubscribeForm from '../SubscribeForm/SubscribeForm';
 import FooterMenu from '../FooterMenu/FooterMenu';
 import './Footer.scss';
 
 const Footer = () => 
-    <footer>
-      <h3 className="footer__article">Not ready  to start now? Keep in touch!</h3>
-      <FooterSubmit />
-      <FooterMenu />
+    <footer className="footer">
+      <div className="container">
+        <h3 className="footer__article">Not ready  to start now? Keep in touch!</h3>
+        <SubscribeForm />
+        <FooterMenu />
+      </div>
     </footer>
-
 
 export default Footer;

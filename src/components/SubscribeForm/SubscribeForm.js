@@ -1,7 +1,7 @@
 import React from 'react';
-import './FooterSubmit.scss';
+import './SubscribeForm.scss';
 
-function FooterSubmit() {
+function SubscribeForm() {
   return (
       <form className="email__input">
         <input type="text" placeholder="name@email.com"></input>
@@ -10,4 +10,4 @@ function FooterSubmit() {
   );
 }
 
-export default FooterSubmit;
+export default SubscribeForm;
