@@ -1,13 +1,17 @@
 // Navigation styling
 .nav {
     background-color: #0A195A;
-    height: 95px;
+    height: 50px;
     padding: 0 30px;
     display: flex;
     z-index: 2;
     position: relative;
     justify-content: space-between;
     align-items: center;
+    &__logo{
+        width:50%;
+        height:50%;
+    }
     .menu {
         list-style: none;
         display: flex;

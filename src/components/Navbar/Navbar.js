@@ -5,7 +5,7 @@ import './Navbar.scss' ;
 
 const Navbar = () =>
       <div className="nav" >
-         <Link> <img src={logo} alt={"logo"}/></Link>
+         <Link> <img src={logo} alt={"logo"} className="nav__logo"/></Link>
         <ul className="menu">
           <li className="menu__item">
             <Link className="menu__link" to="/">About Us</Link>

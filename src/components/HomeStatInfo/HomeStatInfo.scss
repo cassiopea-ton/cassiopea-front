@@ -1,5 +1,5 @@
 .general__stats{
-    height: 140px;
+    height: 70px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -10,13 +10,13 @@
         text-align: center;
     }
     .block__article {
-        font-size: 38px;
-        line-height: 48px;
+        font-size: 24px;
+        line-height: 26px;
         color: #B60002;
     }
     .block__element {
-        font-size: 36px;
-        line-height: 34px;
+        font-size: 18px;
+        line-height: 21px;
         color: #000000;
     }
 }
