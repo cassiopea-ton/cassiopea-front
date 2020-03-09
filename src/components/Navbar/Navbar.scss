@@ -1,0 +1,29 @@
+// Navigation styling
+.nav {
+    background-color: #0A195A;
+    height: 50px;
+    padding: 0 30px;
+    display: flex;
+    z-index: 2;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        width:50%;
+        height:50%;
+    }
+    .menu {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        &__item {
+            margin:25px 25px;
+        }
+        &__link {
+            text-decoration: none;
+            color: #FFF;
+            font-size: 18px;
+            line-height: 24px;
+         }
+    }
+}

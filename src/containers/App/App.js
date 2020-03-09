@@ -1,39 +1,27 @@
+
 import React from 'react';
-import Home from '../Home/Home';
-import OracleInfo from '../OracleInfo/OracleInfo';
-import Statistics from '../Statistics/Statistics';
-import ConsumerInfo from '../ConsumerInfo/ConsumerInfo';
-import {  BrowserRouter as Router, Switch, Route, Link,} from "react-router-dom";
+import Header from '../../components/Header/Header';
+import HomeStatInfo from '../../components/HomeStatInfo/HomeStatInfo';
+import Footer from '../../components/Footer/Footer';
+import { Router } from 'react-router-dom';
+import Routes from '../../routes/Routes';
+import { createBrowserHistory } from 'history';
+
+
 import './App.scss';
 
-function App() {
-  return (
-    <Router>
-      <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/stats">Statistics</Link>
-          </li>
-          <li>
-            <Link to="/howto/oracle">OracleInfo</Link>
-          </li>
-          <li>
-            <Link to="/howto/consumer">ConsumerInfo</Link>
-          </li>
-        </ul>
-        <hr />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/stats" component={Statistics} />
-          <Route  path="/howto/oracle" component={OracleInfo} />
-          <Route path="/howto/consumer" component={ConsumerInfo} />
-        </Switch>
-      </div>
+export const history = createBrowserHistory();
+
+
+
+const  App = () => (
+  <Router history={history}>
+      <Header />
+      <HomeStatInfo />
+      <Routes />
+      <Footer />
     </Router>
   );
-}
+
 
 export default App;
