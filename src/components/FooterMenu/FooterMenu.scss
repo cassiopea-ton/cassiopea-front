@@ -2,16 +2,19 @@
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
-    font-size: 18px;
-    line-height: 21px;
+  
     text-align: center;
     .column__article {
         display: block;
         margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 21px;
     }
     .footer_column {
         margin: 0px 100px;
         z-index: 2;
+        font-size: 15px;
+        line-height: 18px;
 
     }
     a{
