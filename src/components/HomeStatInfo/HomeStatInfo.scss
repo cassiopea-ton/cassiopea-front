@@ -1,10 +1,11 @@
 .general__stats{
     height: 70px;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #FFFFFF;
+    padding: 0 15%;
+   
     .stats__block{
         padding: 15px 80px;
         text-align: center;
