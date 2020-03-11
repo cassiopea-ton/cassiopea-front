@@ -1,6 +1,8 @@
-.info__wrapper{
-    width: 38%;
+.info__wrapper {
     text-align: center;
+    padding-left: 1%;
+    width: 38%;
+
     .wrapper__article{
         color: #091358;
         // font-size: 24px;
@@ -9,4 +11,7 @@
         line-height: 43px;
         padding: 20px 5px;
     }
+}
+.left {
+    width: 30%;
 }

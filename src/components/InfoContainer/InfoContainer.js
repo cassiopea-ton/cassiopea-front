@@ -5,13 +5,12 @@ import RequestButton from '../RequestButton/RequestButton';
 import TransparentButton from '../TransparentButton/TransparentButton';
 
 
-
-const InfoContainer = () =>
-      <div className="info__wrapper" >
-        <h3 className="wrapper__article">Need data? Just request!</h3>
+const InfoContainer = (props) =>
+      <div className={`info__wrapper ${props.position}`}>
+        <h3 className="wrapper__article">{props.text}</h3>
         <GenInfo />
         <RequestButton />
-         <TransparentButton />
+        <TransparentButton />
       </div>
 
 export default InfoContainer;

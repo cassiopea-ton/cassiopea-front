@@ -22,7 +22,7 @@ const  FooterMenu= () =>
           <li><Link className="" to="#">Provider instruction</Link></li>
           <li><Link className="column__items" to="#">Github</Link></li>
           <li><Link className="column__items" to="#">Medium</Link></li>
-          <li><Link className="column__items" to="#">Twitter</Link></li>
+          <li><Link className="column__items" to="https://twitter.com/CassiopeiaTon">Twitter</Link></li>
         </ul>
     </div>
     <Switch>
