@@ -1,18 +1,10 @@
 .provider__wrapper {
-   /*
-   
-   styles for background image in Become Oracle -- fix still required
-
-    // background: url('img/networkAlt.png') no-repeat;
-     height: 900px;
-     background-size: cover;~
-
-   */
-    
-    img {
-        width: 100%;
-    }
-    .wrapper__block{
-        
-    }
+  background: url("img/networkAlt.png") no-repeat;
+  height: 900px;
+  background-size: cover;
+  ~ img {
+    width: 100%;
+  }
+  .wrapper__block {
+  }
 }
