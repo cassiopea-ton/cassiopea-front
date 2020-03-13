@@ -36,7 +36,7 @@ const FooterMenu = () => (
             </Link>
           </li>
           <li>
-            <Link className="column__items" to="#">
+            <Link className="column__items" to="https://github.com/cassiopea-ton">
               Github
             </Link>
           </li>
