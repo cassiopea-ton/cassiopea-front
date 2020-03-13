@@ -1,11 +1,12 @@
 .data__request {
-    padding: 2rem 10%;
-    display: flex;
-    justify-content: space-between;
-    img {    
-        padding-top: 1.5rem;
-        width:600px;
-        height: 312px;
-    }
-
+  padding: 2rem 10%;
+  display: flex;
+  justify-content: space-between;
+   
+  overflow: hidden;
+  img {
+    padding-top: 1.5rem;
+    width: 600px;
+    height: 312px;
+  }
 }

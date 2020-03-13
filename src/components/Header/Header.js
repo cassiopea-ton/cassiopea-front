@@ -1,13 +1,11 @@
-import React from 'react';
-import Navbar from '../../components/Navbar/Navbar';
-import './Header.scss';
-import Polygon from '../../components/Polygon/Polygon';
+import React from "react";
+import Navbar from "../../components/Navbar/Navbar";
+import "./Header.scss";
 
-
-const  Header = () =>
-      <header className="page__header">
-        <Navbar />
-        <Polygon />   
-      </header>
+const Header = () => (
+  <header className="page__header">
+    <Navbar />
+  </header>
+);
 
 export default Header;
