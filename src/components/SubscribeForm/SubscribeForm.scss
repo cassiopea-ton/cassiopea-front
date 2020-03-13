@@ -1,35 +1,32 @@
-.email__input{
+.email__input {
+  display: flex;
+  justify-content: center;
+  input {
+    background: #f0f1f4;
+    border-radius: 15px;
+    height: 25px;
+    border: 0px;
+    width: 200px;
+    margin-right: -40px;
+    z-index: 2;
+  }
+  button {
+    width: 45px;
+    height: 45px;
+    background: #6882a1;
+    border-radius: 15px;
+    z-index: 2;
+    border: 0;
+  }
+  [type="text"] {
+    font-size: 12px;
+    line-height: 14px;
     display: flex;
-    justify-content: center;
-    input{
-        background: #F0F1F4;
-        border-radius: 15px;
-        height:25px;
-        border: 0px;
-        width: 200px;
-        margin-right:-40px;
-        z-index: 2;
-
-    }
-    button{
-        width: 45px;
-        height: 45px;
-        background: #6882A1;
-        border-radius: 15px;  
-        z-index: 2;
-        border: 0;
-
-    }
-    [type="text"] {
-        font-size: 12px;
-        line-height: 14px;
-        display: flex;
-        border: 0px;
-        margin-bottom: 60px;
-        padding: 10px 5px;
-
-    }
-    [placeholder]{
-        padding: 10px 15px;
-    }
+    border: 0px;
+    margin-bottom: 60px;
+    padding: 10px 5px;
+  }
+  [placeholder] {
+    padding: 10px 15px;
+  }
 }

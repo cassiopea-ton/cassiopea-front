@@ -1,14 +1,15 @@
-import React from 'react';
-import './NeedData.scss';
-import InfoContainer from '../InfoContainer/InfoContainer';
+import React from "react";
+import "./NeedData.scss";
+import InfoContainer from "../InfoContainer/InfoContainer";
+import data from "./img/needData.png";
 
+const needDataArticle = "Need data? Just request!";
 
-import data from './img/needData.png';
-
-const NeedData = () =>  
+const NeedData = () => (
   <div className="data__request">
-      <img src={data} alt="data" />
-      <InfoContainer />
+    <img src={data} alt="data" />
+    <InfoContainer position="right" text={needDataArticle} />
   </div>
-     
+);
+
 export default NeedData;

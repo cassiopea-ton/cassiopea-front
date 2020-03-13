@@ -3,7 +3,7 @@ import './ConsumerInfo.scss';
 
 function ConsumerInfo() {
   return (
-    <div>
+    <div className="consumer">
         ConsumerInfo
     </div>
   );

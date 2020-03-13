@@ -1,12 +1,7 @@
-import React from 'react';
-import './OracleInfo.scss';
+import React from "react";
+import "./OracleInfo.scss";
 
-function OracleInfo() {
-  return (
-    <div>
-        OracleInfo
-    </div>
-  );
-}
+const OracleInfo = () => 
+   <div className="oracle">OracleInfo</div>;
 
 export default OracleInfo;

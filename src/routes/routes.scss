@@ -1,7 +1,8 @@
-.wrapper{
-    display: block;
-    height:800px;
-    background-color:#F0F1F4;
-    z-index:2;
-    
+.wrapper {
+  box-sizing: border-box;
+  right: 0;
+  background-color: #f0f1f4;
+  z-index: 2;
+  min-width: 1240px;
+
 }
