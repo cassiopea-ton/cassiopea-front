@@ -36,30 +36,51 @@ const FooterMenu = () => (
             </Link>
           </li>
           <li>
-            <Link className="column__items" to="https://github.com/cassiopea-ton">
+            <Link className="column__items" to="/github">
               Github
             </Link>
           </li>
           <li>
-            <Link className="column__items" to="#">
+            <Link className="column__items" to="/medium">
               Medium
             </Link>
           </li>
           <li>
-            <Link
-              className="column__items"
-              to="https://twitter.com/CassiopeiaTon"
-            >
+            <Link className="column__items" to="/twitter">
               Twitter
             </Link>
           </li>
         </ul>
       </div>
       <Switch>
-        <Route exact path="/" />
-        <Route path="/stats" />
-        <Route path="/howto/oracle" />
-        <Route path="/howto/consumer" />
+      <Route
+          path="#"
+          component={() => {
+            window.location = "https://github.com/cassiopea-ton";
+            return null;
+          }}
+        />
+         <Route
+          path="/github"
+          component={() => {
+            window.location = "https://github.com/cassiopea-ton";
+            return null;
+          }}
+        />
+          <Route
+          path="/medium"
+          component={() => {
+            window.location = "https://medium.com/@cassiopeiablockchain";
+            return null;
+          }}
+        />
+           <Route
+          path="/twitter"
+          component={() => {
+            window.location = "https://twitter.com/CassiopeiaTon";
+            return null;
+          }}
+        />
       </Switch>
     </div>
   </Router>
