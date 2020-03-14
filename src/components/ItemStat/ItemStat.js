@@ -4,7 +4,7 @@ import { uniqueId } from "lodash";
 
 const ItemStat = ({ data }) => (
     <React.Fragment key={uniqueId()}>
-      <p >{data}</p>
+      <td >{data}</td>
     </React.Fragment>
 );
 

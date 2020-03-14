@@ -9,20 +9,15 @@ const tableInfo = [
   "Min. Oracles ",
   "Oracle Counter",
   "Last Update",
-  "Frequence",
+  "Frequency",
   "Tag",
-  "Source "
+  "Source"
 ];
 
 export default () => (
-  <div>
-    <span className="table__info">
-      {tableInfo.map(item => {
-        return (
-         <ItemStat data={item} />
-        );
-      })};
-    
-    </span>
-  </div>
+  <thead className="table__head">
+    {tableInfo.map(item => {
+      return <ItemStat data={item} className={"classname"} />;
+    })}
+      </thead>
 );
