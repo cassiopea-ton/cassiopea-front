@@ -1,0 +1,121 @@
+  
+  .polygon__oracle{
+    height: 468px;
+  }
+  
+  .polygon__oracle__img   {
+    width: 100%;
+    max-height: 65%;
+    height: 568px;
+    z-index: 1;
+    position: absolute;
+    margin-top: -130px;
+    display: flex;
+  }
+  .polygon__oracle__block {
+    margin: 0 auto;
+    padding: 50px 0;
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .polygon__oracle__article,
+  .polygon__oracle__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 48px;
+    font-size: 38px;
+  }
+  .polygon__oracle__article {
+    margin-top: 90px;
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 50px;
+  }
+  
+  .polygon__text {
+    height: 70px;
+  }
+  .polygon__oracle__text span {
+    margin-top: 50px;
+  }
+  // @media (min-width: 1200px) and (max-width: 1680px) {
+  //   .polygon {
+  //     &__article {
+  //       font-size: 30px;
+  //     }
+  //     &__text {
+  //       line-height: 38px;
+  //       font-size: 28px;
+  //     }
+  //   }
+  // }
+
+  // @media (min-width: 768px) and (max-width: 968px) {
+  //   .polygon {
+  //     &__block {
+  //       padding: 50px 0;
+  //       width: 70%;
+  //     }
+  //     &__img {
+  //       height: 68%;
+  //     }
+  //     &__article {
+  //       margin-bottom: 25px;
+  //     }
+  //     &__text {
+  //       line-height: 38px;
+  //       font-size: 28px;
+  //     }
+  //   }
+  // }
+
+  // @media (min-width: 468px) and (max-width: 767px) {
+  //   .polygon {
+  //     &__block {
+  //       padding: 25px 0;
+  //     }
+  //     &__img {
+  //       height: 50%;
+  //     }
+  //     &__block {
+  //       width: 50%;
+  //     }
+  //     &__article {
+  //       margin-bottom: 10px;
+  //       font-size: 36px;
+  //     }
+  //     &__text {
+  //       line-height: 38px;
+  //       font-size: 28px;
+  //     }
+  //   }
+  // }
+  // @media (min-height: 570px) and (max-height: 678px) {
+  //   .polygon__img {
+  //     height: 85%;
+  //   }
+  // }
+
+  // @media (min-height: 478px) and (max-height: 569px) {
+  //   .polygon__img {
+  //     height: 95%;
+  //   }
+  // }
+
+  // @media (min-height: 678px) and (max-height: 768px) {
+  //   .polygon__img {
+  //     height: 80%;
+  //   }
+  // }
+
+  // @media (max-width: 500px) {
+  //   .polygon__img {
+  //     height: 100%;
+  //   }
+  // }

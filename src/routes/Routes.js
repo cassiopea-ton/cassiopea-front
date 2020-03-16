@@ -1,6 +1,6 @@
 import React from "react";
 import ConsumerInfo from "../containers/ConsumerInfo/ConsumerInfo";
-import OracleInfo from "../containers/OracleInfo/OracleInfo";
+import OracleInfo from "../containers/OracleInfo/OracleInfo"
 import Statistics from "../containers/Statistics/Statistics";
 import { Switch, Route } from "react-router-dom";
 import Home from "../containers/Home/Home";
