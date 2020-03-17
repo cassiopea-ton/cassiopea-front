@@ -26,7 +26,7 @@ const Navbar = () => (
         </Link>
       </li>
       <li className="menu__item">
-        <Link className="menu__link" to="/howto/consumer">
+        <Link className="menu__link" to="/be/oracle">
           Be An Oracle
         </Link>
       </li>
