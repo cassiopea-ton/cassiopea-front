@@ -6,7 +6,6 @@ import "./Navbar.scss";
 const Navbar = () => (
   <div className="nav">
     <Link>
-      {" "}
       <img src={logo} alt={"logo"} className="nav__logo" />
     </Link>
     <ul className="menu">
