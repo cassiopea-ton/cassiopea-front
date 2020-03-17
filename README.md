@@ -1,5 +1,6 @@
 # Cassiopeia
-This is a source code for the Cassiopeia web application. Our main idea is to ensure data for DApp developers and give rewards to data providers respectively.   
+
+Our main idea is to ensure data for DApp developers and create decentralised market place for data providers and smart contract developers.
 
 ## Available Scripts
 
@@ -38,14 +39,13 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Main containers
 
-## Main containers 
-* ### Home -  home page of application
-* ### App - renders Header and Footer components as basic components for each container
-* ### Routes - responsible for correct rendering of container after redirect via navigation menu
-* ### Statistics - page with the latest providers' data
-* ### ConsumerInfo - page with providers' request form
-
+- ### Home - home page of application
+- ### App - renders Header and Footer components as basic components for each container
+- ### Routes - responsible for correct rendering of container after redirect via navigation menu
+- ### Statistics - page with the latest providers' data
+- ### ConsumerInfo - page with providers' request form
 
 ## Learn More
 
@@ -53,16 +53,15 @@ If you have a desire to improve our project we are always welcome enthusiasts.
 
 To be informed with the latest updates of React.js, here are some sources that may help you.
 
- [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 [React documentation](https://reactjs.org/)
 
 [Code Splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
- [Analyzing the Bundle Size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+[Analyzing the Bundle Size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
- [Making a Progressive Web App](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
+[Making a Progressive Web App](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
 [Advanced Configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
