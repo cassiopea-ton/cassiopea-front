@@ -3,9 +3,7 @@ import "./OracleSearchForm.scss";
 import RequestButton from "../RequestButton/RequestButton";
 
 
-const buttonStyles = {
-  backgroundColor: "#0D0829",
-}
+
 
 const OracleSearchForm = () => (
   <div className="providers__search__container">
@@ -13,8 +11,12 @@ const OracleSearchForm = () => (
       <form className="form__container">
       <div className="search__article">Provider’s search</div>
       <div className="button__group group__top">
-        <RequestButton content="Public"  />
-        <RequestButton content="Private"buttonColor={buttonStyles} />
+      {/* <RadioGroup name="test">
+        <Radio className="request__button__option" value="Public" />
+        <Radio className="request__button__option" value="Private" />
+      </RadioGroup> */}
+        <option className="request__button__option" value="Public">Public</option>
+        <option className="request__button__option" value="Private">Private</option>
       </div>
       <div className="form__row row__top">
         <input type="text" placeholder="url" className=" inp input__left" />
@@ -26,7 +28,7 @@ const OracleSearchForm = () => (
       </div>
       <textarea></textarea>
       <div className="button__group group__top">
-        <RequestButton content="Search" />
+          <RequestButton content="Search" />
         <RequestButton content="Request!" />
       </div>
       </form>
