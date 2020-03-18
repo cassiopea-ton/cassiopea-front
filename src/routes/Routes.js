@@ -8,16 +8,20 @@ import routePaths from "./routePath";
 import "./routes.scss";
 import BeOracle from "../containers/BeOracle/BeOracle";
 
-const Routes = () => (
-  <section className="wrapper">
-    <Switch>
-      <Route exact path={routePaths.homePage()} component={Home} />
-      <Route path={routePaths.statistics()} component={Statistics} />
-      <Route path={routePaths.oracleInfo()} component={OracleInfo} />
-      <Route path={routePaths.beOracle()} component={BeOracle} />
-      <Route path={routePaths.consumerInfo()} component={ConsumerInfo} />
-    </Switch>
-  </section>
-);
+const Routes = (props) => {
 
+  const { tonClient } = props;
+  
+  return (
+    <section className="wrapper">
+      <Switch>
+        <Route exact path={routePaths.homePage()} component={Home} />
+        <Route path={routePaths.statistics()} render={ (props) => <Statistics {...props} client={ tonClient }  />} />
+        <Route path={routePaths.oracleInfo()} component={OracleInfo} />
+        <Route path={routePaths.beOracle()} component={BeOracle} />
+        <Route path={routePaths.consumerInfo()} render={ (props) => <ConsumerInfo {...props} client={ tonClient }  />}  />
+      </Switch>
+    </section>
+  );
+};
 export default Routes;

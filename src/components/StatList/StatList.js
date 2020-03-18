@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./StatList.scss";
 
 const listInfo = [
@@ -15,13 +15,21 @@ const element = listInfo.map(elem => {
   return <td className>{elem}</td>;
 });
 const items = Array(20).fill(element);
-console.log(typeof items);
 
-const StatList = () => (
-  <tbody>
-    {items.map(i => {
-      return <tr className="table__info alt">{i}</tr>;
-    })}
-  </tbody>
-);
+const StatList = props => {
+  
+
+  useEffect( () => {
+  const { client } = props;
+  console.log("kek");
+  })
+
+  return (
+    <tbody>
+      {items.map(i => {
+        return <tr className="table__info alt">{i}</tr>;
+      })}
+    </tbody>
+  );
+};
 export default StatList;

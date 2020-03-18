@@ -5,14 +5,17 @@ import Providers from "../../components/Providers/Providers";
 import StatisticsStat from "../../components/StatisticsStat/StatisticsStat";
 import ReadyToJoin from "../../components/ReadyToJoin/ReadyToJoin";
 
+const Statistics = props => {
 
-const Statistics = () => (
+  const { client } = props;
+
+return (
   <div className="stats">
     <StatisticsPolygon />
-    <Providers />
+    <Providers tonClient={ client } />
     <StatisticsStat />
     <ReadyToJoin />
   </div>
 );
-
-export default Statistics;
+};
+export default Statistics

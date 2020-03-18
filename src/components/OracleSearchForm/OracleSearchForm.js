@@ -9,9 +9,13 @@ export default class OracleSearchForm extends React.Component {
     this.state = {
       button: null
     };
-
     this.handleClick = this.handleClick.bind(this);
   }
+
+  componentDidMount(props) {
+    const { tonClient } = this.props;
+  }
+
 
   handleClick() {
     this.setState({
@@ -21,6 +25,9 @@ export default class OracleSearchForm extends React.Component {
   }
 
   render() {
+
+
+
     const {
       buttonStyles = {
         backgroundColor: "#B60002"
