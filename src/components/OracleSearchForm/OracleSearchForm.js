@@ -77,7 +77,7 @@ export default class OracleSearchForm extends React.Component {
                 className=" inp input__right"
               />
             </div>
-            <textarea></textarea>
+            <textarea disabled></textarea>
             <div className="button__group group__top">
               <RequestButton content="Search" />
               <RequestButton content="Request!" />

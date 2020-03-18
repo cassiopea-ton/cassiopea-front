@@ -3,8 +3,7 @@ import "./RequestOption.scss";
 
 const RequestOption = props => {
   return (
-    <div className={props.class_name} style={props.buttonColor}>
-      <div class="form_radio_btn">
+    <label className={props.class_name} style={props.buttonColor}>
         <input
           onClick={props.onClick}
           id="radio-1"
@@ -13,11 +12,9 @@ const RequestOption = props => {
           value={props.value}
           checked
         />
-        <label for="radio-1">{props.content}</label>
-      </div>
-    </div>
-  );
-};
+      <p>{props.content}</p></label>
+    );
+  };
 
 RequestOption.defaultProps = {
   content: "Request data!",
