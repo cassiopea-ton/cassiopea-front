@@ -8,7 +8,7 @@ const needDataArticle = "Need data? Just request!";
 const NeedData = () => (
   <div className="data__request">
     <img src={data} alt="data" />
-    <InfoContainer position="right" text={needDataArticle} content ="Request Data" />
+    <InfoContainer position="right" text={needDataArticle} content ="Request Data" path="/howto/consumer"  />
   </div>
 );
 

@@ -11,8 +11,8 @@ const InfoContainer = (props) => {
     <div className={`info__wrapper ${position}`}>
       <h3 className="wrapper__article">{text}</h3>
       <GenInfo />
-      <RequestButton content={content} />
-      <TransparentButton />
+      <RequestButton content={content} path={props.path} />
+      <TransparentButton path="/stats" />
     </div>
   );
 };

@@ -6,7 +6,7 @@ const oracleArticle = "Ready to become an Oracle!";
 
 const BecomeOracle = () => (
   <div className="provider__wrapper">
-    <InfoContainer position="left" text={oracleArticle}  content="Become Oracle" />
+    <InfoContainer position="left" text={oracleArticle}  content="Become Oracle" path="/howto/oracle" />
   </div>
 );
 

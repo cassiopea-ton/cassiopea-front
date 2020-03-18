@@ -19,7 +19,6 @@ console.log(typeof items);
 
 const StatList = () => (
   <tbody>
-    {" "}
     {items.map(i => {
       return <tr className="table__info alt">{i}</tr>;
     })}

@@ -2,7 +2,7 @@ import React from "react";
 import "./OracleInfo.scss";
 
 const OracleInfo = () => (
-   <div className="oracle__request">
+   <div className="oracle__info">
    
   </div>
 );

@@ -2,14 +2,14 @@ import React from "react";
 import "./ConsumerInfo.scss";
 import HowToUse from "../../components/HowToUse/HowToUse";
 import RequestAnOraclePolygon from "../../components/RequestAnOraclePolygon/RequestAnOraclePolygon";
-import ProvidersSearch from "../../components/ProvidersSearch/ProvidersSearch";
+import OracleSearchForm from "../../components/OracleSearchForm/OracleSearchForm";
 
 const ConsumerInfo = () => {
   return (
     <div className="consumer">
       <RequestAnOraclePolygon />
       <HowToUse />
-      <ProvidersSearch />
+      <OracleSearchForm />
     </div>
   );
 };
