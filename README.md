@@ -1,7 +1,6 @@
 # Cassiopeia
 
 Our main idea is to ensure data for DApp developers and create decentralised market place for data providers and smart contract developers.
-git add
 ## Available Scripts
 
 In the project directory, you can run:
