@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import "./OracleSearchForm.scss";
 import RequestButton from "../RequestButton/RequestButton";
+import RequestOption from "../RequestOption/RequestOption";
 
 export default class OracleSearchForm extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       button: null
     };
-   
+
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -36,19 +36,21 @@ export default class OracleSearchForm extends React.Component {
           <form className="form__container">
             <div className="search__article">Provider’s search</div>
             <div className="button__group group__top">
-              <RequestButton
+              <RequestOption
                 content="Public"
+                value="public"
+                buttonColor={
+                  this.state.button ? buttonStylesDark : buttonStyles
+                }
+                onClick={this.handleClick}
+              />
+              <RequestOption
+                value="private"
+                content="Private"
+                onClick={this.handleClick}
                 buttonColor={
                   this.state.button ? buttonStyles : buttonStylesDark
                 }
-                onClick={this.handleClick}
-                className="active"
-              />
-              <RequestButton
-                content="Private"
-                className="private"
-                onClick={this.handleClick}
-                buttonColor={this.state.button ? buttonStylesDark : buttonStyles}
               />
             </div>
             <div className="form__row row__top">

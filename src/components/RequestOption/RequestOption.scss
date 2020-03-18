@@ -1,0 +1,17 @@
+.request__button {
+  width: 300px;
+  height: 24px;
+  border-radius: 30px;
+  padding: 15px 30px;
+  text-align: center;
+  margin: 0 auto;
+  label {
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #e5e5e5;
+  }
+}
+input[type=radio] {
+  display: none;
+}
