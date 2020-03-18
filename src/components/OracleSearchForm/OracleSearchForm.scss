@@ -10,17 +10,13 @@
   width: 800px;
   height: 650px;
 }
-.request__button__option {
-  width: 300px;
-  height: 24px;
-  border-radius: 30px;
-  padding: 15px 30px;
-  text-align: center;
-  margin: 0 auto;
-  color: #e5e5e5;
-  background-color: rgb(182, 0, 2);
-}
 
+.active {
+  background-color: #b60002;
+}
+.private {
+  background-color: #0d0829;
+}
 .search__article {
   font-size: 36px;
   line-height: 43px;

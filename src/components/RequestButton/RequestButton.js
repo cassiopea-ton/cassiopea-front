@@ -4,8 +4,8 @@ import "./RequestButton.scss";
 
 const RequestButton = props => {
   return (
-    <div className={props.class_name} style={props.buttonColor}>
-      <Link to={props.path}>{props.content}</Link>
+    <div className={props.class_name +" " + props.className} style={props.buttonColor}>
+      <Link onClick={props.onClick} to={props.path}>{props.content}</Link>
     </div>
   );
 };
