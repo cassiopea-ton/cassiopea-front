@@ -1,7 +1,6 @@
 import React from "react";
 import "./BeOracleInfo.scss";
 import img from "./oracleInfo.png";
-import RequestButton from "../RequestButton/RequestButton";
 const BeOracleInfo = () => {
   return (
     <div className="be__oracle__info">
