@@ -1,0 +1,31 @@
+.be__oracle__info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 300px;
+}
+
+.be__oracle__info__cointainer {
+  display: flex;
+  margin: 0 auto 100px auto;
+}
+.be__oracle__info__article {
+  width: 710px;
+  text-align: center;
+}
+
+.be__oracle__info__button {
+  width: 300px;
+  margin: 50px auto;
+  height: 80px;
+}
+
+.be__oracle__info__button__red {
+  padding: 20px 70px;
+  background-color: rgb(182, 0, 2);
+  text-decoration: none;
+  color: white;
+  height: 24px;
+  border-radius: 30px;
+  text-align: center;
+}
