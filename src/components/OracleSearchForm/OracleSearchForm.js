@@ -7,7 +7,7 @@ export default class OracleSearchForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      button: null,
+      button: null
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -16,13 +16,12 @@ export default class OracleSearchForm extends React.Component {
     this.initClient();
   }
 
-
-   initClient = () => {
-     this.setState(()=>{
-      
-  })
-
-}
+  initClient = () => {
+    this.setState(props => {
+      const { tonClient } = props;
+      return tonClient;
+    });
+  };
   handleClick() {
     this.setState({
       button: !this.state.button
@@ -30,9 +29,6 @@ export default class OracleSearchForm extends React.Component {
     console.log(this.state.button);
   }
   render() {
-
-
-
     const {
       buttonStyles = {
         backgroundColor: "#B60002"
@@ -91,7 +87,7 @@ export default class OracleSearchForm extends React.Component {
             </div>
             <textarea disabled></textarea>
             <div className="button__group group__top">
-              <RequestButton content="Search" to="/howto/consumer" />
+              <RequestButton content="Search" to="" />
               <RequestButton content="Request!" />
             </div>
           </form>
