@@ -38,7 +38,7 @@ const BeOracleInfo = () => {
         </div>
       </div>
       <div className="be__oracle__info__button">
-        <a className="request__button be__oracle__info__button__red" href='https://github.com/cassiopea-ton/cassiopeia-oracle/archive/master.zip' download>Click to download</a>
+        <a className="request__button be__oracle__info__button__red" href='https://github.com/cassiopea-ton/cassiopeia-oracle'>Click to download</a>
       </div>
     </div>
   );
