@@ -91,7 +91,7 @@ export default class OracleSearchForm extends React.Component {
             </div>
             <textarea disabled></textarea>
             <div className="button__group group__top">
-              <RequestButton content="Search" to="/howto/consumer" />
+              <RequestButton content="Search" to="/cassiopea-front/howto/consumer" />
               <RequestButton content="Request!" />
             </div>
           </form>

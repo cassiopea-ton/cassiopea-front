@@ -14,7 +14,7 @@ const InfoContainer = (props) => {
       <h3 className="wrapper__article">{text}</h3>
       <GenInfo color={colorStyle} top={top} element={element}/>
       <RequestButton content={content} path={props.path} />
-      <TransparentButton path="/stats" />
+      <TransparentButton path="/cassiopea-front/stats" />
     </div>
   );
 };

@@ -12,7 +12,7 @@ const element = "As DAPP developer you should be certain in what your smart cont
 const NeedData = () => (
   <div className="data__request">
     <img src={data} alt="data" />
-    <InfoContainer top={top} element={element} position="right" text={needDataArticle} content ="Request Data" path="/howto/consumer"  />
+    <InfoContainer top={top} element={element} position="right" text={needDataArticle} content ="Request Data" path="/cassiopea-front/howto/consumer"  />
   </div>
 );
 

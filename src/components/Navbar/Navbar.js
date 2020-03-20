@@ -10,27 +10,27 @@ const Navbar = () => (
     </Link>
     <ul className="menu">
       <li className="menu__item">
-        <Link className="menu__link" to="/">
+        <Link className="menu__link" to="/cassiopea-front/">
           About Us
         </Link>
       </li>
       <li className="menu__item">
-        <Link className="menu__link" to="/stats">
+        <Link className="menu__link" to="/cassiopea-front/stats">
           Statistics
         </Link>
       </li>
       <li className="menu__item">
-        <Link className="menu__link" to="/howto/oracle">
+        <Link className="menu__link" to="/cassiopea-front/howto/oracle">
           Oracle Instruction
         </Link>
       </li>
       <li className="menu__item">
-        <Link className="menu__link" to="/be/oracle">
+        <Link className="menu__link" to="/cassiopea-front/be/oracle">
           Be An Oracle
         </Link>
       </li>
       <li className="menu__item">
-        <Link className="menu__link" to="/howto/consumer">
+        <Link className="menu__link" to="/cassiopea-front/howto/consumer">
           Request Oracles
         </Link>
       </li>
