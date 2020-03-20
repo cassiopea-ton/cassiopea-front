@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cassiopea-front/static/css/main.f1a1f99a.chunk.css",
-    "main.js": "/cassiopea-front/static/js/main.bb66d0f3.chunk.js",
-    "main.js.map": "/cassiopea-front/static/js/main.bb66d0f3.chunk.js.map",
+    "main.js": "/cassiopea-front/static/js/main.85357159.chunk.js",
+    "main.js.map": "/cassiopea-front/static/js/main.85357159.chunk.js.map",
     "runtime-main.js": "/cassiopea-front/static/js/runtime-main.7cffaa42.js",
     "runtime-main.js.map": "/cassiopea-front/static/js/runtime-main.7cffaa42.js.map",
     "static/js/2.56f79a6c.chunk.js": "/cassiopea-front/static/js/2.56f79a6c.chunk.js",
     "static/js/2.56f79a6c.chunk.js.map": "/cassiopea-front/static/js/2.56f79a6c.chunk.js.map",
     "index.html": "/cassiopea-front/index.html",
-    "precache-manifest.1b1dbe773bd8097cacf0716172d3289e.js": "/cassiopea-front/precache-manifest.1b1dbe773bd8097cacf0716172d3289e.js",
+    "precache-manifest.455a41d81b50c39a54d2f0f867aa310a.js": "/cassiopea-front/precache-manifest.455a41d81b50c39a54d2f0f867aa310a.js",
     "service-worker.js": "/cassiopea-front/service-worker.js",
     "static/css/main.f1a1f99a.chunk.css.map": "/cassiopea-front/static/css/main.f1a1f99a.chunk.css.map",
     "static/js/2.56f79a6c.chunk.js.LICENSE.txt": "/cassiopea-front/static/js/2.56f79a6c.chunk.js.LICENSE.txt",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.7cffaa42.js",
     "static/js/2.56f79a6c.chunk.js",
     "static/css/main.f1a1f99a.chunk.css",
-    "static/js/main.bb66d0f3.chunk.js"
+    "static/js/main.85357159.chunk.js"
   ]
 }
