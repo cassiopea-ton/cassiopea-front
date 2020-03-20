@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cassiopea-front/precache-manifest.d01a5a1fb569ebf6abd060ed7e71d2a3.js"
+  "/cassiopea-front/precache-manifest.4459025853a7d2faa43af7f802271ff8.js"
 );
 
 self.addEventListener('message', (event) => {
