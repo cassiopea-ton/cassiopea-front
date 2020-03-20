@@ -4,12 +4,15 @@ import HowToUse from "../../components/HowToUse/HowToUse";
 import RequestAnOraclePolygon from "../../components/RequestAnOraclePolygon/RequestAnOraclePolygon";
 import OracleSearchForm from "../../components/OracleSearchForm/OracleSearchForm";
 
-const ConsumerInfo = () => {
+const ConsumerInfo = (props) => {
+
+  const { client } = props;
+
   return (
     <div className="consumer">
       <RequestAnOraclePolygon />
       <HowToUse />
-      <OracleSearchForm />
+      <OracleSearchForm tonClient={client}  />
     </div>
   );
 };

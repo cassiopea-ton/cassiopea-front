@@ -5,12 +5,14 @@ import RequestButton from "../RequestButton/RequestButton";
 import TransparentButton from "../TransparentButton/TransparentButton";
 import PropTypes from "prop-types";
 
+
+
 const InfoContainer = (props) => {
-  const { position,text , content } = props;
+  const { position, text , content, top, element, colorStyle } = props;
   return (
     <div className={`info__wrapper ${position}`}>
       <h3 className="wrapper__article">{text}</h3>
-      <GenInfo />
+      <GenInfo color={colorStyle} top={top} element={element}/>
       <RequestButton content={content} path={props.path} />
       <TransparentButton path="/stats" />
     </div>

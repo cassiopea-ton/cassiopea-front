@@ -6,7 +6,8 @@ import BecomeOracle from "../../components/BecomeOracle/BecomeOracle";
 import Polygon from "../../components/Polygon/Polygon";
 
 
-const Home = () => (
+
+const Home = (props) => (
   <div>
     <Polygon />
     <HomeStatInfo />
