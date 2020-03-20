@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/cassiopea-front/static/css/main.f1a1f99a.chunk.css",
+    "main.js": "/cassiopea-front/static/js/main.f8a62fcb.chunk.js",
+    "main.js.map": "/cassiopea-front/static/js/main.f8a62fcb.chunk.js.map",
+    "runtime-main.js": "/cassiopea-front/static/js/runtime-main.7cffaa42.js",
+    "runtime-main.js.map": "/cassiopea-front/static/js/runtime-main.7cffaa42.js.map",
+    "static/js/2.56f79a6c.chunk.js": "/cassiopea-front/static/js/2.56f79a6c.chunk.js",
+    "static/js/2.56f79a6c.chunk.js.map": "/cassiopea-front/static/js/2.56f79a6c.chunk.js.map",
+    "index.html": "/cassiopea-front/index.html",
+    "precache-manifest.d01a5a1fb569ebf6abd060ed7e71d2a3.js": "/cassiopea-front/precache-manifest.d01a5a1fb569ebf6abd060ed7e71d2a3.js",
+    "service-worker.js": "/cassiopea-front/service-worker.js",
+    "static/css/main.f1a1f99a.chunk.css.map": "/cassiopea-front/static/css/main.f1a1f99a.chunk.css.map",
+    "static/js/2.56f79a6c.chunk.js.LICENSE.txt": "/cassiopea-front/static/js/2.56f79a6c.chunk.js.LICENSE.txt",
+    "static/media/OraclePolygon.png": "/cassiopea-front/static/media/OraclePolygon.e65a7ac9.png",
+    "static/media/Polygon.png": "/cassiopea-front/static/media/Polygon.c61a33ce.png",
+    "static/media/header-logo.png": "/cassiopea-front/static/media/header-logo.dfe98d7e.png",
+    "static/media/howToUse.png": "/cassiopea-front/static/media/howToUse.d70cd7e1.png",
+    "static/media/needData.png": "/cassiopea-front/static/media/needData.d869d961.png",
+    "static/media/BecomeOracle.scss": "/cassiopea-front/static/media/networkAlt.d2ecb9b9.png",
+    "static/media/oracleInfo.png": "/cassiopea-front/static/media/oracleInfo.4b5efe66.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7cffaa42.js",
+    "static/js/2.56f79a6c.chunk.js",
+    "static/css/main.f1a1f99a.chunk.css",
+    "static/js/main.f8a62fcb.chunk.js"
+  ]
+}
