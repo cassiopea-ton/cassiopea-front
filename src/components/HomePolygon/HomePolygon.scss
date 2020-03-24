@@ -134,3 +134,19 @@
     display: none;
   }
 }
+
+@media (max-width: 468px) {
+  .polygon {
+    height: 334px;
+    &__block {
+      width: 50%;
+    }
+    &__article {
+      margin-bottom: 10px;
+    }
+    &__text {
+      line-height: 30px;
+      font-size: 24px;
+    }
+  }
+}
