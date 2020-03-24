@@ -9,72 +9,82 @@ const FooterMenu = () => (
         <Link className="column__article" to="#">
           Join
         </Link>
-        <ul>
-          <li>
-            <Link className="column__items" to="#">
-              Become a provider
-            </Link>
-          </li>
-          <Link className="column__items" to="#">
-            Request data
-          </Link>
-          <li>
-            <Link className="column__items" to="#">
-              Subscribe
-            </Link>
-          </li>
+        <ul className="items__block">
+          <div className="block__col col_l">
+            <li>
+              <Link className="column__items" to="#">
+                Become a provider
+              </Link>
+            </li>
+            <li>
+              <Link className="column__items" to="#">
+                Request data
+              </Link>
+            </li>
+          </div>
+          <div className="block__col col_r">
+            <li>
+              <Link className="column__items" to="#">
+                Subscribe
+              </Link>
+            </li>
+          </div>
         </ul>
       </div>
       <div className="footer_column">
         <Link className="column__article" to="#">
           Learn more
         </Link>
-        <ul>
-          <li>
-            <Link className="" to="#">
-              Provider instruction
-            </Link>
-          </li>
-          <li>
-            <Link className="column__items" to="/github">
-              Github
-            </Link>
-          </li>
-          <li>
-            <Link className="column__items" to="/medium">
-              Medium
-            </Link>
-          </li>
-          <li>
-            <Link className="column__items" to="/twitter">
-              Twitter
-            </Link>
-          </li>
+        <ul className="items__block">
+          <div className="block__col col_l">
+            <li>
+              <Link className="" to="#">
+                Provider instruction
+              </Link>
+            </li>
+            <li>
+              <Link className="column__items" to="/github">
+                Github
+              </Link>
+            </li>
+          </div>
+          <div className="block__col col_r">
+            <li>
+              <Link className="column__items" to="/medium">
+                Medium
+              </Link>
+            </li>
+            <li>
+              <Link className="column__items" to="/twitter">
+                Twitter
+              </Link>
+            </li>
+          </div>
         </ul>
       </div>
       <Switch>
-      <Route
+        <Route
           path="#"
           component={() => {
             window.location = "https://github.com/cassiopea-ton";
             return null;
           }}
         />
-         <Route
+        <Route
           path="/github"
           component={() => {
             window.location = "https://github.com/cassiopea-ton";
             return null;
           }}
         />
-          <Route
+        <Route
           path="/medium"
           component={() => {
             window.location = "https://medium.com/@cassiopeiablockchain";
             return null;
           }}
         />
-           <Route
+        <Route
           path="/twitter"
           component={() => {
             window.location = "https://twitter.com/CassiopeiaTon";

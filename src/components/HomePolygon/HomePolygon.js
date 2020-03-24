@@ -1,8 +1,8 @@
 import React from "react";
-import "./Polygon.scss";
-import polygon from "../Polygon/img/Polygon.png";
+import "./HomePolygon.scss";
+import polygon from "./img/Polygon.png";
 
-const Polygon = () => (
+const HomePolygon = (props) => (
   <div className="polygon">
     <img className="polygon__img" src={polygon} alt="polygon" />
     <div className="polygon__block">
@@ -15,4 +15,4 @@ const Polygon = () => (
   </div>
 );
 
-export default Polygon;
+export default HomePolygon;

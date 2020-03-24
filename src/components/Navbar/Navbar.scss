@@ -1,6 +1,6 @@
 // Navigation styling
 .nav {
-  background-color: #0a195a;
+  background: url("./nav-bg.jpg");
   height: 50px;
   padding: 0 30px;
   display: flex;
@@ -30,3 +30,10 @@
     width: 50px;
   }
 }
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
+

@@ -6,16 +6,15 @@ import StatisticsStat from "../../components/StatisticsStat/StatisticsStat";
 import ReadyToJoin from "../../components/ReadyToJoin/ReadyToJoin";
 
 const Statistics = props => {
-
   const { client } = props;
 
-return (
-  <div className="stats">
-    <StatisticsPolygon />
-    <Providers tonClient={ client } />
-    <StatisticsStat />
-    <ReadyToJoin />
-  </div>
-);
+  return (
+    <div className="stats__container">
+      <StatisticsPolygon />
+      <Providers tonClient={client} />
+      <StatisticsStat />
+      <ReadyToJoin />
+    </div>
+  );
 };
-export default Statistics
+export default Statistics;
