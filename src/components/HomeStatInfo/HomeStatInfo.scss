@@ -5,7 +5,6 @@
   align-items: center;
   background: #ffffff;
   .stats__block {
-    padding: 15px 80px;
     text-align: center;
   }
   .block__article {
@@ -17,5 +16,12 @@
     font-size: 18px;
     line-height: 21px;
     color: #000000;
+  }
+}
+
+
+@media(max-width: 576px) {
+  .general__stats {
+   
   }
 }
