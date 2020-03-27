@@ -1,6 +1,6 @@
 import React from "react";
 import "./ReadyToJoin.scss";
-import RequestContent from "../RequestContent/RequestContent";
+import RequestContent from "../../RequestContent/RequestContent";
 
 const ReadyToJoin = props => (
   <div>

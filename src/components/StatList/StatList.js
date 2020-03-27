@@ -17,13 +17,13 @@ const element = listInfo.map(elem => {
 const items = Array(20).fill(element);
 
 const StatList = props => {
-  const initClient = props => {
-    // const { tonClient } = props;
-    // return tonClient;
+  const initClient = () => {
+    const { client } = props;
   };
 
   useEffect(() => {
     initClient();
+    console.log("initiated");
   });
 
   return (

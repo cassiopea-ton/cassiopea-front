@@ -1,6 +1,6 @@
 import React from 'react';
-import SubscribeForm from '../SubscribeForm/SubscribeForm';
-import FooterMenu from '../FooterMenu/FooterMenu';
+import SubscribeForm from '../Footer/SubscribeForm/SubscribeForm';
+import FooterMenu from '../Footer/FooterMenu/FooterMenu';
 import './Footer.scss';
 
 const Footer = () => (

@@ -1,9 +1,9 @@
 import React from "react";
 import "./Home.scss";
-import NeedData from "../../components/NeedData/NeedData";
-import HomeStatInfo from "../../components/HomeStatInfo/HomeStatInfo";
-import BecomeOracle from "../../components/BecomeOracle/BecomeOracle";
-import HomePolygon from "../../components/HomePolygon/HomePolygon";
+import NeedData from "../../components/HomePage/NeedData/NeedData";
+import HomeStatInfo from "../../components/HomePage/HomeStatInfo/HomeStatInfo";
+import BecomeOracle from "../../components/HomePage/BecomeOracle/BecomeOracle";
+import HomePolygon from "../../components/HomePage/HomePolygon/HomePolygon";
 
 
 

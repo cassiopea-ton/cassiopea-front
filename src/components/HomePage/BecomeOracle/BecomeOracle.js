@@ -1,6 +1,6 @@
 import React from "react";
 import "./BecomeOracle.scss";
-import InfoContainer from "../InfoContainer/InfoContainer";
+import InfoContainer from "../../InfoContainer/InfoContainer";
 const oracleArticle = "Ready to become an Oracle!";
 
 const top =

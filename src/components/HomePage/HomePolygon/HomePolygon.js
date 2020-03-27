@@ -14,7 +14,6 @@ const HomePolygon = props => {
           Don’t limit your DAPP.
         </p>
       </div>
-    
     </div>
   );
 };
