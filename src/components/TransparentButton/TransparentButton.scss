@@ -9,6 +9,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 568px) {
+    width: 100px !important;
+  }
   a {
     font-size: 18px;
     line-height: 22px;

@@ -1,12 +1,10 @@
 .general__stats {
   height: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background: #ffffff;
-  padding: 0 15%;
   .stats__block {
-    padding: 15px 80px;
     text-align: center;
   }
   .block__article {
@@ -18,5 +16,12 @@
     font-size: 18px;
     line-height: 21px;
     color: #000000;
+  }
+}
+
+
+@media(max-width: 576px) {
+  .general__stats {
+   
   }
 }

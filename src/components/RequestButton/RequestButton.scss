@@ -5,10 +5,13 @@
   padding: 15px 30px;
   text-align: center;
   margin: 0 auto;
+  @media (max-width: 568px) {
+    width: 160px !important;
+  }
   a {
     font-size: 18px;
     text-align: center;
     text-decoration: none;
-    color: #e5e5e5;
+      color: #e5e5e5;
+    }
   }
-}

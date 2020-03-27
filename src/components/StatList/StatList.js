@@ -17,12 +17,14 @@ const element = listInfo.map(elem => {
 const items = Array(20).fill(element);
 
 const StatList = props => {
-  
+  const initClient = props => {
+    // const { tonClient } = props;
+    // return tonClient;
+  };
 
-  useEffect( () => {
-  const { client } = props;
-  console.log("kek");
-  })
+  useEffect(() => {
+    initClient();
+  });
 
   return (
     <tbody>

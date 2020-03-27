@@ -37,6 +37,9 @@
   &__text {
     height: 70px;
   }
+  .menu__mobile {
+    display: none;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1680px) {
   .polygon {
@@ -53,7 +56,6 @@
 @media (min-width: 768px) and (max-width: 968px) {
   .polygon {
     &__block {
-      padding: 50px 0;
       width: 70%;
     }
     &__img {
@@ -90,6 +92,7 @@
     }
   }
 }
+
 @media (min-height: 570px) and (max-height: 678px) {
   .polygon__img {
     height: 85%;
@@ -111,5 +114,44 @@
 @media (max-width: 500px) {
   .polygon__img {
     height: 100%;
+  }
+}
+
+@media (max-width: 968px) {
+
+  .polygon {
+    background-image: url("./img/Rectangle.png");
+    height: 450px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    &__block {
+      height: 250px;
+      margin: 0 auto;
+    }
+    &__article {
+      font-size: 37px;
+      line-height: 44px;
+    }
+  }
+  img {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media (max-width: 468px) {
+  .polygon {
+    height: 334px;
+    &__block {
+      width: 50%;
+    }
+    &__article {
+      margin-bottom: 10px;
+    }
+    &__text {
+      line-height: 30px;
+      font-size: 24px;
+    }
   }
 }
