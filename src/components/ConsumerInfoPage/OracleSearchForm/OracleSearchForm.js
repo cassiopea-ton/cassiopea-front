@@ -5,20 +5,16 @@ import RequestOption from "../../RequestOption/RequestOption";
 
 const OracleSearchForm = props => {
   const [button, setButton] = useState(null);
+  const { client } = props;
+  const initClient = () => client;
 
-  const initClient = () => {
-    const { client } = props;
-  };
-  const [buttonStyles, setButtonStyles] = useState({
+  const [buttonStyles] = useState({
     backgroundColor: "#B60002"
   });
-  const [buttonStylesDark, setButtonStylesDark] = useState({
+  const [buttonStylesDark] = useState({
     backgroundColor: "#0D0829"
   });
-  useEffect(() => {
-    initClient();
-    console.log("Client initiated in OracleSearchForm");
-  });
+  useEffect(() => initClient());
   const handleClick = () => {
     setButton(!button);
   };

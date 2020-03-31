@@ -1,7 +1,6 @@
 import React from "react";
 
-import "./StatisticTable.scss";
-import ItemStat from "../ItemStat/ItemStat";
+import "./StatTableHead.scss";
 
 const tableInfo = [
   "Address",
@@ -17,7 +16,7 @@ const tableInfo = [
 export default () => (
   <thead className="table__head">
     {tableInfo.map(item => {
-      return <ItemStat data={item} className={"classname"} />;
+      return <th data={item} className="table__article" >{item}</th>;
     })}
       </thead>
 );

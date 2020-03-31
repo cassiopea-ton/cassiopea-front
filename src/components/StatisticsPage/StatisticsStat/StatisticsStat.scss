@@ -24,3 +24,10 @@
   line-height: 21px;
   color: #fff;
 }
+@media (max-width: 968px) {
+  .statistics__stat__wrapper {
+    display: none;
+    height: 550px;
+    margin: 50px 0;
+  }
+}
