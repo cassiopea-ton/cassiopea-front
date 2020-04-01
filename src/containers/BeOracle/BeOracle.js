@@ -1,7 +1,7 @@
 import React from "react";
 import "./BeOracle.scss";
-import BeOraclePolygon from "../../components/BeOraclePolygon/BeOraclePolygon";
-import BeOracleInfo from "../../components/BeOracleInfo/BeOracleInfo";
+import BeOraclePolygon from "../../components/BeOraclePage/BeOraclePolygon/BeOraclePolygon";
+import BeOracleInfo from "../../components/BeOraclePage/BeOracleInfo/BeOracleInfo";
 
 const BeOracle = (props) => (
    <div className="become__oracle__container">

@@ -1,0 +1,29 @@
+.provider__wrapper {
+  background: url("img/networkAlt.png") no-repeat;
+  height: 50rem;
+  background-size: cover;
+  color: #6882a1;
+}
+
+@media (max-width: 1140px) {
+  .provider__wrapper {
+    background: url("./img/becomeOracleMobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  .left {
+    padding: 10rem 2rem;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 968px) {
+  .provider__wrapper {
+    width: auto;
+  }
+  .left {
+    width: auto;
+    padding: 2rem 2rem;
+  }
+}

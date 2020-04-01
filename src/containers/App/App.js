@@ -15,24 +15,20 @@ export default class App extends React.Component {
     this.state = {
       AppClient: null
     };
-    
   }
-  initClient = () => this.state.setState((AppClient) => {
-    TONClient.create({
-      servers: ["test.ton.org/testnet"],
-      transactionTimeout: 30000
-    })
-  }).then(client => {
-    this.state.setState({ AppClient: client });
-  });
+  initClient = () =>
+    this.state
+      .setState(AppClient => {
+        TONClient.create({
+          servers: ["test.ton.org/testnet"],
+          transactionTimeout: 30000
+        });
+      })
+      .then(client => {
+        this.state.setState({ AppClient: client });
+      });
 
-  
-   
   render() {
-    
-
-  
-
     return (
       <Router history={history}>
         <Header />
