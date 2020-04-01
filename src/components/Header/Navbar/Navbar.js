@@ -6,14 +6,14 @@ import "./Navbar.scss";
 
 const Navbar = props => {
   const [menuClass, setMenuClass] = useState(true);
-  const onClick = () => {
+  const navHandler = () => {
     setMenuClass(!menuClass);
   };
 
   return (
     <div className="nav__container">
       <div className="nav">
-        <Link>
+        <Link to="/">
           <img src={logo} alt={"logo"} className="nav__logo" />
         </Link>
         <ul className="menu">
@@ -44,36 +44,35 @@ const Navbar = props => {
           </li>
         </ul>
       </div>
-      <div className="gamburger" onClick={onClick}>
+      <div className="gamburger" onClick={navHandler}>
         <span className={menuClass ? "" : "first"}></span>
         <span className={menuClass ? "" : "middle"}></span>
         <span className={menuClass ? "" : "last"}></span>
       </div>
       <div className={menuClass ? "menu__mobile" : "menu__mobile menu-active"}>
-        <Link></Link>
         <ul className="menu">
           <li className="menu__item">
-            <Link className="menu__item__link" to="/">
+            <Link className="menu__item__link" onClick={navHandler} to="/">
               About Us
             </Link>
           </li>
           <li className="menu__item">
-            <Link className="menu__item__link" to="/stats">
+            <Link className="menu__item__link" onClick={navHandler} to="/stats">
               Statistics
             </Link>
           </li>
           <li className="menu__item">
-            <Link className="menu__item__link" to="/howto/oracle">
+            <Link className="menu__item__link" onClick={navHandler} to="/howto/oracle">
               Oracle Instruction
             </Link>
           </li>
           <li className="menu__item">
-            <Link className="menu__item__link" to="/be/oracle">
+            <Link className="menu__item__link" onClick={navHandler} to="/be/oracle">
               Be An Oracle
             </Link>
           </li>
           <li className="menu__item">
-            <Link className="menu__item__link" to="/howto/consumer">
+            <Link className="menu__item__link" onClick={navHandler} to="/howto/consumer">
               Request Oracles
             </Link>
           </li>

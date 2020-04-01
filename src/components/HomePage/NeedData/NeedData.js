@@ -13,7 +13,7 @@ const element =
 
 const NeedData = () => (
   <div className="data__request">
-    <div classsName="data__request__img__container">
+    <div className="data__request__img__container">
       <img src={data} alt="data" />
     </div>
     <InfoContainer

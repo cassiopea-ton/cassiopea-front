@@ -10,6 +10,7 @@
   justify-content: space-between;
   align-items: center;
 
+
   span {
     display: block;
     position: absolute;
@@ -20,7 +21,7 @@
     opacity: 1;
     left: 0;
     transform: rotate(0deg);
-    transition: 0.25s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
 
   &__logo {
@@ -69,7 +70,7 @@
     position: absolute;
     right: -200vw;
     top: 0;
-    transition: all 0.5s;
+    transition: right 0.8s ;
     .menu__item {
       margin: 10px auto;
       a {
@@ -86,7 +87,7 @@
   }
   .gamburger {
     position: absolute;
-    right: 20px;
+    right: 40px;
     top: 50px;
     border-radius: 5px;
     width: 40px;

@@ -19,6 +19,9 @@ margin:  30px 0;
   .wrapper__container {
     width: auto;
     height: 100%;
-    margin: 50px 5%;
+    margin: 75px 5%;
+  } 
+  .wrapper__container:first-child {
+    margin: 20px 5%;
   } 
 }

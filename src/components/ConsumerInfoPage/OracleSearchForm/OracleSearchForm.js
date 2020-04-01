@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./OracleSearchForm.scss";
-import RequestButton from "../../RequestButton/RequestButton";
 import RequestOption from "../../RequestOption/RequestOption";
 
 const OracleSearchForm = props => {
@@ -17,6 +16,20 @@ const OracleSearchForm = props => {
   useEffect(() => initClient());
   const handleClick = () => {
     setButton(!button);
+  };
+  const btnColor = {
+    backgroundColor: "#b60002",
+    height:"51px",
+    width: "360px",
+    lineHeight: "3px",
+    color: "#e5e5e5",
+    border: 0,
+    fontSize: "18px",
+    fontWeight:"400"
+
+  };
+  const btnClass = {
+    class_name: "request__button"
   };
   return (
     <div className="providers__search__container">
@@ -59,8 +72,8 @@ const OracleSearchForm = props => {
           </div>
           <textarea disabled></textarea>
           <div className="button__group group__top">
-            <RequestButton content="Search" to="" />
-            <RequestButton content="Request!" />
+            <button className={btnClass.class_name} style={btnColor}>Search</button>
+            <button className={btnClass.class_name} style={btnColor}>Request!</button>
           </div>
         </form>
       </div>

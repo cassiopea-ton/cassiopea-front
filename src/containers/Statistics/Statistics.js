@@ -1,5 +1,6 @@
 import React from "react";
 import "./Statistics.scss";
+import PropTypes from 'prop-types';
 import StatisticsPolygon from "../../components/StatisticsPage/StatisticsPolygon/StatisticsPolygon";
 import Providers from "../../components/StatisticsPage/Providers/Providers";
 import StatisticsStat from "../../components/StatisticsPage/StatisticsStat/StatisticsStat";
@@ -17,4 +18,10 @@ const Statistics = props => {
     </div>
   );
 };
+
+
+Statistics.propTypes = {
+  client: PropTypes.object,
+}
+
 export default Statistics;

@@ -10,7 +10,7 @@ const RequestOption = props => {
           type="radio"
           name="radio"
           value={props.value}
-          checked
+          defaultChecked
         />
       <p>{props.content}</p></label>
     );
