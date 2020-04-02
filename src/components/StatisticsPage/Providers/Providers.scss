@@ -15,9 +15,8 @@
 }
 
 @media (max-width: 1143px) and (min-width: 968px) {
-  .providers__container{
+  .providers__container {
     padding: 0 20px;
-
   }
   .container__table {
     margin: 200px auto 0 auto;
@@ -29,7 +28,7 @@
   .providers__container {
     margin: 250px auto 0 auto;
   }
-  
+
   .container__table {
     margin: 200px auto 0 auto;
     width: auto;
@@ -39,11 +38,12 @@
     display: none;
   }
 
-  .container__table__wrapper,
-  .container__table__wrapper tr,
   .container__table__wrapper td {
     display: block;
     width: 100%;
+  }
+  .container__table__wrapper tr {
+    width: 95%;
   }
   .container__table__wrapper tbody {
     display: block;
