@@ -44,7 +44,7 @@ const Navbar = props => {
           </li>
         </ul>
       </div>
-      <div className="gamburger" onClick={navHandler}>
+      <div className={menuClass ? "gamburger" : "gamburger gmb__cross"} onClick={navHandler}>
         <span className={menuClass ? "" : "first"}></span>
         <span className={menuClass ? "" : "middle"}></span>
         <span className={menuClass ? "" : "last"}></span>

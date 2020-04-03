@@ -28,6 +28,7 @@
 @media (max-width: 968px) {
   .providers__container {
     margin: 250px auto 0 auto;
+    padding: 1rem;
   }
 
   .container__table {
@@ -37,6 +38,14 @@
   }
   .container__table__wrapper thead {
     display: none;
+  }
+
+  .table__info td,
+  .table__head .table__article {
+    padding: 1rem 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid #6882a1;
+    width: auto;
   }
 
   .container__table__wrapper td {
