@@ -3,8 +3,9 @@
 }
 .container__table {
   background-color: #fff;
-  margin: 200px auto 0 auto;
+  margin: 300px auto 0 auto;
   width: 90%;
+  padding: 1.1rem;
 
   &__wrapper {
     padding: 20px;
@@ -48,6 +49,8 @@
   .container__table__wrapper tbody {
     display: block;
     width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
   }
   .container__table__wrapper tr {
     margin-bottom: 15px;
@@ -68,12 +71,9 @@
     font-weight: bold;
     text-align: left;
   }
-}
 
-@media (max-width: 768px) {
   .container__table {
     max-width: 720px;
-    margin: 0 20px;
   }
   table {
     margin: 0 20px;
