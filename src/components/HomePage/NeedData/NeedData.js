@@ -22,7 +22,7 @@ const NeedData = () => (
       position="right"
       text={needDataArticle}
       content="Request Data"
-      path="/howto/consumer"
+      path="/cassiopea-front/howto/consumer"
     />
   </div>
 );

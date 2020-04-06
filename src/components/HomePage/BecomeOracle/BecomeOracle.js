@@ -22,7 +22,7 @@ const BecomeOracle = () => (
       text={oracleArticle}
       color={colorStyle}
       content="Become Oracle"
-      path="/howto/oracle"
+      path="/cassiopea-front/howto/oracle"
     />
   </div>
 );

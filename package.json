@@ -2,11 +2,13 @@
   "name": "cassiopea",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cassiopea-ton.github.io/cassiopea-front/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "cassiopeia-ton-sdk": "^1.1.0",
+    "gh-pages": "^2.2.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-redux": "^7.2.0",
@@ -20,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/compat-data": "~7.8.0",
     "@babel/helper-call-delegate": "^7.8.7",
     "@babel/plugin-proposal-numeric-separator": "^7.8.3",
     "node-sass": "^4.13.1"

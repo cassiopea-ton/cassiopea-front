@@ -13,32 +13,32 @@ const Navbar = props => {
   return (
     <div className="nav__container">
       <div className="nav">
-        <Link to="/">
+        <Link  to="/cassiopea-front/">
           <img src={logo} alt={"logo"} className="nav__logo" />
         </Link>
         <ul className="menu">
           <li className="menu__item">
-            <Link className="menu__item__link" to="/">
+            <Link className="menu__item__link" to="/cassiopea-front/">
               About Us
             </Link>
           </li>
           <li className="menu__item">
-            <Link className="menu__item__link" to="/stats">
+            <Link className="menu__item__link" to="/cassiopea-front/stats">
               Statistics
             </Link>
           </li>
           <li className="menu__item">
-            <Link className="menu__item__link" to="/howto/oracle">
+            <Link className="menu__item__link" to="/cassiopea-front/howto/oracle">
               Oracle Instruction
             </Link>
           </li>
           <li className="menu__item">
-            <Link className="menu__item__link" to="/be/oracle">
+            <Link className="menu__item__link" to="/cassiopea-front/be/oracle">
               Be An Oracle
             </Link>
           </li>
           <li className="menu__item">
-            <Link className="menu__item__link" to="/howto/consumer">
+            <Link className="menu__item__link" to="/cassiopea-front/howto/consumer">
               Request Oracles
             </Link>
           </li>
@@ -52,27 +52,27 @@ const Navbar = props => {
       <div className={menuClass ? "menu__mobile" : "menu__mobile menu-active"}>
         <ul className="menu">
           <li className="menu__item">
-            <Link className="menu__item__link" onClick={navHandler} to="/">
+            <Link className="menu__item__link" onClick={navHandler} to="/cassiopea-front/">
               About Us
             </Link>
           </li>
           <li className="menu__item">
-            <Link className="menu__item__link" onClick={navHandler} to="/stats">
+            <Link className="menu__item__link" onClick={navHandler} to="/cassiopea-front/stats">
               Statistics
             </Link>
           </li>
           <li className="menu__item">
-            <Link className="menu__item__link" onClick={navHandler} to="/howto/oracle">
+            <Link className="menu__item__link" onClick={navHandler} to="/cassiopea-front/howto/oracle">
               Oracle Instruction
             </Link>
           </li>
           <li className="menu__item">
-            <Link className="menu__item__link" onClick={navHandler} to="/be/oracle">
+            <Link className="menu__item__link" onClick={navHandler} to="/cassiopea-front/be/oracle">
               Be An Oracle
             </Link>
           </li>
           <li className="menu__item">
-            <Link className="menu__item__link" onClick={navHandler} to="/howto/consumer">
+            <Link className="menu__item__link" onClick={navHandler} to="/cassiopea-front/howto/consumer">
               Request Oracles
             </Link>
           </li>

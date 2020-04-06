@@ -9,7 +9,7 @@ const tableBodyInfo = [
   "5m ago",
   "5h",
   "Currency Pair",
-  "mad.bet.com"
+  "mad.bet.com",
 ];
 
 const tableHeadInfo = [
@@ -20,18 +20,21 @@ const tableHeadInfo = [
   "Last Update",
   "Frequency",
   "Tag",
-  "Source"
+  "Source",
 ];
 
 const element = tableHeadInfo.map((elem, index) => {
-  return <td key={index} data-label={elem}>{tableBodyInfo[index]}</td>;
+  return (
+    <td key={index} data-label={elem}>
+      {tableBodyInfo[index]}
+    </td>
+  );
 });
 
 const items = Array(20).fill(element);
 
-const StatTableBody = props => {
+const StatTableBody = (props) => {
   const { client } = props;
-
   const initClient = () => client;
   useEffect(() => {
     initClient();
@@ -40,7 +43,11 @@ const StatTableBody = props => {
   return (
     <tbody>
       {items.map((i, index) => {
-        return <tr  key={index} className="table__info alt">{i}</tr>;
+        return (
+          <tr key={index} className="table__info alt">
+            {i}
+          </tr>
+        );
       })}
     </tbody>
   );
