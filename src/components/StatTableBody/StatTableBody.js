@@ -24,7 +24,7 @@ const tableHeadInfo = [
 ];
 
 const element = tableHeadInfo.map((elem, index) => {
-  return <td data-label={elem}>{tableBodyInfo[index]}</td>;
+  return <td key={index} data-label={elem}>{tableBodyInfo[index]}</td>;
 });
 
 const items = Array(20).fill(element);
@@ -39,8 +39,8 @@ const StatTableBody = props => {
   });
   return (
     <tbody>
-      {items.map(i => {
-        return <tr className="table__info alt">{i}</tr>;
+      {items.map((i, index) => {
+        return <tr  key={index} className="table__info alt">{i}</tr>;
       })}
     </tbody>
   );

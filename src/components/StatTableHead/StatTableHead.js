@@ -16,8 +16,8 @@ const tableInfo = [
 export default () => (
   <thead className="table__head">
     <tr>
-    {tableInfo.map(item => {
-      return <th data={item} className="table__article" >{item}</th>;
+    {tableInfo.map((item, index) => {
+      return <th key={index} data={item} className="table__article" >{item}</th>;
     })}
     </tr>
       </thead>

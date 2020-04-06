@@ -5,7 +5,7 @@ import StatTableBody from "../../StatTableBody/StatTableBody";
 
 const Providers = props => {
   const { tonClient } = props;
- 
+    console.log(tonClient.config.data)
   return (  
       <div className="providers__container">
         <div className="container__table">
