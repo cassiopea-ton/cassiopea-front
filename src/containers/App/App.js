@@ -28,7 +28,10 @@ export default class App extends React.Component {
         this.state.setState({ AppClient: client });
       });
 
+        
+
   render() {
+    
     return (
       <Router history={history}>
         <Header />
