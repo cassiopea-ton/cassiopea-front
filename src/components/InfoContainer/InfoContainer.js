@@ -18,6 +18,7 @@ const InfoContainer = (props) => {
     </div>
   );
 };
+
 InfoContainer.propTypes = {
   position: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,

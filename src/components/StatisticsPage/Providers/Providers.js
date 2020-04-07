@@ -6,7 +6,6 @@ const { BagOfCells } = require("cassiopeia-ton-sdk");
 
 const Providers = (props) => {
   const { tonClient } = props;
-  console.log(tonClient);
   return (
     <div className="providers__container">
       <div className="container__table">

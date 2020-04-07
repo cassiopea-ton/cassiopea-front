@@ -12,24 +12,9 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
    this.state = {
-     appClient: new TONClient({
-      servers: ["https://testnet.ton.dev"],
-      transactionTimeout: 30000,
-     })
+     appClient: new TONClient()
    }
   }
-  //   (async function joi() {
-  //     const client = await TONClient.create({
-  //       servers: ["https://testnet.ton.dev"],
-  //       transactionTimeout: 30000,
-  //     });
-  //     return client;
-  //   }).then(client => {
-  //     this.state = {
-  //       appClient: client
-  //     }
-  //   })
-  // }
   render() {
     return (
       <Router history={history}>
