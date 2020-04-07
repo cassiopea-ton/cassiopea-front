@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eb7e0cee23ab95b33bc39b3eb8ece1b8",
+    "revision": "56f2aaa05a121a180ee4cd6835e7e03f",
     "url": "/cassiopea-front/index.html"
   },
   {
