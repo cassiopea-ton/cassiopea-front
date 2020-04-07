@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7b1c6b5edd6dbcfd0bf12ad61b8e041d",
+    "revision": "cd1268b9d7267baf569f4160d01ea965",
     "url": "/cassiopea-front/index.html"
   },
   {
-    "revision": "78558bef444b8eeb8613",
+    "revision": "4d12d43a4ae730745837",
     "url": "/cassiopea-front/static/css/main.8c1779c7.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cassiopea-front/static/js/2.9c3ea736.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "78558bef444b8eeb8613",
-    "url": "/cassiopea-front/static/js/main.74360117.chunk.js"
+    "revision": "4d12d43a4ae730745837",
+    "url": "/cassiopea-front/static/js/main.df590aab.chunk.js"
   },
   {
     "revision": "5695d973b26cde5b0934",
