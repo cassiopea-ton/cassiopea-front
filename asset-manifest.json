@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/cassiopea-front/static/css/main.8c1779c7.chunk.css",
-    "main.js": "/cassiopea-front/static/js/main.28b409fc.chunk.js",
-    "main.js.map": "/cassiopea-front/static/js/main.28b409fc.chunk.js.map",
+    "main.css": "/cassiopea-front/static/css/main.878693b0.chunk.css",
+    "main.js": "/cassiopea-front/static/js/main.0c0cbea6.chunk.js",
+    "main.js.map": "/cassiopea-front/static/js/main.0c0cbea6.chunk.js.map",
     "runtime-main.js": "/cassiopea-front/static/js/runtime-main.21d4bf23.js",
     "runtime-main.js.map": "/cassiopea-front/static/js/runtime-main.21d4bf23.js.map",
-    "static/js/2.9c3ea736.chunk.js": "/cassiopea-front/static/js/2.9c3ea736.chunk.js",
-    "static/js/2.9c3ea736.chunk.js.map": "/cassiopea-front/static/js/2.9c3ea736.chunk.js.map",
+    "static/js/2.fccebe0f.chunk.js": "/cassiopea-front/static/js/2.fccebe0f.chunk.js",
+    "static/js/2.fccebe0f.chunk.js.map": "/cassiopea-front/static/js/2.fccebe0f.chunk.js.map",
     "index.html": "/cassiopea-front/index.html",
-    "precache-manifest.5ba8c0d31d4bcd4d35bb2d4aa587df96.js": "/cassiopea-front/precache-manifest.5ba8c0d31d4bcd4d35bb2d4aa587df96.js",
+    "precache-manifest.f8010ada2bcade2d3ddd60b9c56be978.js": "/cassiopea-front/precache-manifest.f8010ada2bcade2d3ddd60b9c56be978.js",
     "service-worker.js": "/cassiopea-front/service-worker.js",
-    "static/css/main.8c1779c7.chunk.css.map": "/cassiopea-front/static/css/main.8c1779c7.chunk.css.map",
-    "static/js/2.9c3ea736.chunk.js.LICENSE.txt": "/cassiopea-front/static/js/2.9c3ea736.chunk.js.LICENSE.txt",
+    "static/css/main.878693b0.chunk.css.map": "/cassiopea-front/static/css/main.878693b0.chunk.css.map",
+    "static/js/2.fccebe0f.chunk.js.LICENSE.txt": "/cassiopea-front/static/js/2.fccebe0f.chunk.js.LICENSE.txt",
     "static/media/Footer.scss": "/cassiopea-front/static/media/Footer.65ca75cb.png",
-    "static/media/OraclePolygon.png": "/cassiopea-front/static/media/OraclePolygon.e65a7ac9.png",
+    "static/media/OraclePolygon.png": "/cassiopea-front/static/media/OraclePolygon.2f951cb7.png",
     "static/media/Polygon.png": "/cassiopea-front/static/media/Polygon.9ba3dbf2.png",
     "static/media/BeOraclePolygon.scss": "/cassiopea-front/static/media/Rectangle.8e8898fd.png",
     "static/media/BecomeOracle.scss": "/cassiopea-front/static/media/networkAlt.bd6c2140.png",
@@ -27,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.21d4bf23.js",
-    "static/js/2.9c3ea736.chunk.js",
-    "static/css/main.8c1779c7.chunk.css",
-    "static/js/main.28b409fc.chunk.js"
+    "static/js/2.fccebe0f.chunk.js",
+    "static/css/main.878693b0.chunk.css",
+    "static/js/main.0c0cbea6.chunk.js"
   ]
 }
