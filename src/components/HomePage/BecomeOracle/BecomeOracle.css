@@ -5,9 +5,11 @@
   color: #6882a1;
   margin-bottom: -200px;
 }
+
 .left {
   padding: 10rem 2rem;
 }
+
 @media (max-width: 1140px) {
   .provider__wrapper {
     background: url("./img/becomeOracleMobile.png");
@@ -35,8 +37,9 @@
   }
 }
 
-@media(max-width: 568px) {
+@media (max-width: 568px) {
   .left {
     width: auto;
   }
 }
+/*# sourceMappingURL=BecomeOracle.css.map */

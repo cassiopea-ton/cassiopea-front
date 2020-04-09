@@ -2,7 +2,10 @@ import React from "react";
 import "./Providers.scss";
 import StatTableHead from "../../StatTableHead/StatTableHead";
 import StatTableBody from "../../StatTableBody/StatTableBody";
+import {connect} from 'react-redux'
 const { BagOfCells } = require("cassiopeia-ton-sdk");
+const { TONClient } = require("ton-client-node-js");
+
 
 const Providers = (props) => {
   const { tonClient } = props;
@@ -18,4 +21,12 @@ const Providers = (props) => {
   );
 };
 
-export default Providers;
+
+ const mapStateToProps = state => {
+   console.log(state);
+   return {
+     tonClient : state.ton.client
+   };
+ }
+
+export default connect(mapStateToProps, null) (Providers);

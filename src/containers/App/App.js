@@ -11,17 +11,17 @@ export const history = createBrowserHistory();
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-   this.state = {
-     appClient: new TONClient()
-   }
+    this.state = {
+      appClient: new TONClient(),
+    };
   }
   render() {
     return (
-      <Router history={history}>
-        <Header />
-        <Routes tonClient={this.state.appClient} />
-        <Footer />
-      </Router>
+        <Router history={history} basename={process.env.PUBLIC_URL}>
+          <Header />
+          <Routes tonClient={this.state.appClient} />
+          <Footer />
+        </Router>
     );
   }
 }

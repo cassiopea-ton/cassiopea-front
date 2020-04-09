@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./StatTableBody.scss";
+import { connect } from "react-redux";
 
 const tableBodyInfo = [
   "-1:3451..a155",
@@ -53,4 +54,4 @@ const StatTableBody = (props) => {
   );
 };
 
-export default StatTableBody;
+export default connect(null, null)(StatTableBody);
