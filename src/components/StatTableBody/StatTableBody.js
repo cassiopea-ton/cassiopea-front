@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./StatTableBody.scss";
-import { connect } from "react-redux";
 
 const tableBodyInfo = [
   "-1:3451..a155",
@@ -34,13 +33,9 @@ const element = tableHeadInfo.map((elem, index) => {
 
 const items = Array(20).fill(element);
 
-const StatTableBody = (props) => {
-  const { client } = props;
-  const initClient = () => client;
-  useEffect(() => {
-    initClient();
-    console.log("initiated");
-  });
+export default (props) => {
+  const { createTonclient } = props;
+      console.log(createTonclient)
   return (
     <tbody>
       {items.map((i, index) => {
@@ -54,4 +49,4 @@ const StatTableBody = (props) => {
   );
 };
 
-export default connect(null, null)(StatTableBody);
+
