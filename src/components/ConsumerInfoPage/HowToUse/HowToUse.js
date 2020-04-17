@@ -6,27 +6,18 @@ const HowToUse = () => {
   return (
     <div className="how__to__cointainer">
       <div className="container">
-        <h1 className="container__article">How to use an oracle?</h1>
-
+        <h1 className="container__article howto__article">
+          How to use an oracle?
+        </h1>
         <p className="container__text cons">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
-          felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-          consequat massa quis enim.
+          Oracles are the data providers for decentralized applications. All you
+          need to use the real-world data is over here. Fill in requirements,
+          press the button and let's go!
         </p>
         <p className="container__text cons">
-          Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
-          enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
-          dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
-          Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-          </p>
-         
-           <p className="container__text cons"> Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam
-          semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc,
-          blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio
-          et ante tincidunt tempus. Donec vitae sapien ut libero venenatis
-          faucibus. Nullam quis ante.
+          Our search engine will try to find all the providers that matches your
+          needs. Send request to them from your wallet and the data will be
+          immediately sent to your application.
         </p>
       </div>
       <div className="container__img">
