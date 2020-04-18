@@ -1,8 +1,10 @@
-import tonClient from './tonClient'
+/* eslint-disable import/no-named-as-default */
+import { combineReducers } from 'redux';
+// eslint-disable-next-line import/no-named-as-default-member
+import tonClient from './tonClient';
 
-import {combineReducers} from 'redux'
 
-const reducers = {tonClient}
+const reducers = { tonClient };
 
 export const rootReducer = combineReducers(reducers);
 

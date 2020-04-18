@@ -3,8 +3,8 @@ import tonClientSaga from './tonClientSaga';
 
 const sagas = [tonClientSaga];
 
-console.log(sagas)
+console.log(sagas);
 export default function* rootSaga() {
-    console.log('root saga')
-    yield all(sagas.map(fork));
+  console.log('root saga');
+  yield all(sagas.map(fork));
 }
