@@ -1,0 +1,23 @@
+.footer {
+  position: relative;
+  background-image: url(./Footer.png);
+  background-repeat: no-repeat;
+  justify-content: center;
+  color: #6882a1;
+  background-size: cover;
+  height: 800px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    position: relative;
+  }
+}
+
+@media (max-width: 1140px) {
+  .footer {
+    background-image: url(./Rectangle.png);
+    height: auto;
+  }
+}

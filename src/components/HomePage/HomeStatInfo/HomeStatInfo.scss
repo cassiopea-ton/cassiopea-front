@@ -1,0 +1,27 @@
+.general__stats {
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffffff;
+  .stats__block {
+    text-align: center;
+  }
+  .block__article {
+    font-size: 24px;
+    line-height: 26px;
+    color: #b60002;
+  }
+  .block__element {
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+  }
+}
+
+
+@media(max-width: 576px) {
+  .general__stats {
+   
+  }
+}

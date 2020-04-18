@@ -1,0 +1,44 @@
+.data__request {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  &__img__container {
+    height: 412px;
+  }
+  overflow: hidden;
+  img {
+    padding-top: 1.5rem;
+    max-width: 600px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1140px) {
+  .data__request {
+    background-image: url("./img/needDataMobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    img {
+      display: none;
+    }
+    .info__wrapper {
+      width: 30rem;
+      margin: 0 auto;
+    }
+    .right {
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .data__request {
+    margin: 0 auto;
+    img {
+      display: none;
+    }
+    .info__wrapper {
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.container {
+    text-align: center;
+}
+
+.how__to__cointainer {
+    
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 140px;
+}
+
+.container__article {
+
+  margin-bottom: 50px;
+  color: #0d0829;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.container__text {
+    
+  text-align: center;
+  width: 570px;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 20px 0 20px 90px;
+}
+.container__text {
+  color: #6882a1;
+}
+
+.container__img {
+  width: 600px;
+  margin-left: 100px;
+  align-self: center;
+}
+
+.container__img  img {
+    width: 450px;
+    height: 300px;
+  }
