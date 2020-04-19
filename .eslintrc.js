@@ -1,33 +1,72 @@
-module.exports = {
+{
+  "extends": [
+      "airbnb",
+      "prettier",
+      "prettier/react",
+      "prettier/standard"
+  ],
+  "plugins": [
+      "react",
+      "prettier",
+      "import"
+  ],
   "parser": "babel-eslint",
-  env: {
-    browser: true,
-    es6: true,
-    node: true,
+  "parserOptions": {
+      "ecmaFeatures": {
+          "experimentalObjectRestSpread": true,
+          "jsx": true
+      },
+      "sourceType": "module"
   },
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-    
-    
-  ],
-  globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
+  "env": {
+      "browser": true,
+      "node": true,
+      "es6": true,
+      "jest": true
   },
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-      
-    },
-    ecmaVersion: 2018,
-    sourceType: 'module',
+  "globals": {
+      "$": true,
+      "clipchamp": true
   },
-  plugins: [
-    'react',
-  ],
-  rules: {
+  "settings": {
+      "import/resolver": {
+          "webpack": {
+              "config": "./.eslintrc.webpack.js"
+          }
+      }
   },
-  parser: "babel-eslint"
-
-};
+  "rules": {
+      "react/jsx-filename-extension": [
+          1,
+          {
+              "extensions": [
+                  ".js",
+                  ".jsx"
+              ]
+          }
+      ],
+      "padding-line-between-statements": [
+          "error",
+          { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*" },
+          { "blankLine": "any", "prev": "const", "next": "const" },
+          { "blankLine": "any", "prev": "let", "next": "let" },
+          { "blankLine": "any", "prev": "var", "next": "var" }
+      ],
+      "prettier/prettier": [
+          "error",
+          {
+              "singleQuote": true,
+              "parser": "flow",
+              "tabWidth": 4,
+              "trailingComma": "all",
+              "printWidth": 120
+          }
+      ],
+      "jsx-a11y/anchor-is-valid": 0,
+      "jsx-a11y/click-events-have-key-events": 0,
+      "jsx-a11y/no-static-element-interactions": 0,
+      "import/no-cycle": 0,
+      "react/state-in-constructor": 0,
+      "react/static-property-placement": 0
+  }
+}

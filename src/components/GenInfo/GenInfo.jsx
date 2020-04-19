@@ -4,8 +4,8 @@ import './GenInfo.scss';
 
 const GenInfo = ({ top, element, color }) => (
   <div className="info__block" style={{ color }}>
-    <p className="info__element top">{top}</p>
-    <p className="info__element">{element}</p>
+    <p className="info__block_element top">{top}</p>
+    <p className="info__block_element">{element}</p>
   </div>
 );
 GenInfo.propTypes = {
