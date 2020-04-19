@@ -5,7 +5,7 @@ import './Footer.scss';
 
 const Footer = () => (
   <footer className="footer">
-    <div className="container">
+    <div className="footer__container">
       <SubscribeForm />
       <FooterMenu />
     </div>

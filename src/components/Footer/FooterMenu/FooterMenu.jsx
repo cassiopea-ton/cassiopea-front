@@ -7,57 +7,57 @@ import {
 const FooterMenu = () => (
   <Router>
     <div className="footer__menu">
-      <div className="footer_column">
-        <Link className="column__article" to="cassiopeia/front">
+      <div className="footer__menu_column">
+        <Link className="menu__column_article" to="cassiopeia/front">
           Join
         </Link>
-        <ul className="items__block">
-          <div className="block__col col_l">
+        <ul className="menu__items__block">
+          <div className="block__column col_l">
             <li>
-              <Link className="column__items" to="/cassiopeia/front">
+              <Link className="column__item" to="/cassiopeia/front">
                 Become a provider
               </Link>
             </li>
             <li>
-              <Link className="column__items" to="cassiopeia/front">
+              <Link className="column__item" to="cassiopeia/front">
                 Request data
               </Link>
             </li>
           </div>
-          <div className="block__col col_r">
+          <div className="block__column col_r">
             <li>
-              <Link className="column__items" to="cassiopeia/front">
+              <Link className="column__item" to="cassiopeia/front">
                 Subscribe
               </Link>
             </li>
           </div>
         </ul>
       </div>
-      <div className="footer_column">
-        <Link className="column__article" to="cassiopeia/front">
+      <div className="footer__menu_column">
+        <Link className="menu__column_article" to="cassiopeia/front">
           Learn more
         </Link>
-        <ul className="items__block">
-          <div className="block__col col_l">
+        <ul className="menu__items_block">
+          <div className="block__column col_l">
             <li>
-              <Link className="column__items" to="cassiopeia/fron">
+              <Link className="column__item" to="cassiopeia/fron">
                 Provider instruction
               </Link>
             </li>
             <li>
-              <Link className="column__items" to="/github">
+              <Link className="column__item" to="/github">
                 Github
               </Link>
             </li>
           </div>
-          <div className="block__col col_r">
+          <div className="block__column col_r">
             <li>
-              <Link className="column__items" to="/medium">
+              <Link className="column__item" to="/medium">
                 Medium
               </Link>
             </li>
             <li>
-              <Link className="column__items" to="/twitter">
+              <Link className="column__item" to="/twitter">
                 Twitter
               </Link>
             </li>
