@@ -3,7 +3,7 @@
     height: 468px;
   }
   
-  .polygon__oracle__img   {
+  .polygon__oracle_img   {
     width: 100%;
     height: 568px;
     z-index: 1;
@@ -11,7 +11,7 @@
     margin-top: -130px;
     display: flex;
   }
-  .polygon__oracle__block {
+  .polygon__oracle_block {
     margin: 0 auto;
     padding: 50px 0;
     position: relative;
@@ -23,7 +23,7 @@
     align-items: center;
   }
   .polygon__oracle__article,
-  .polygon__oracle__text {
+  .polygon__oracle_text {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -37,10 +37,10 @@
     margin-bottom: 50px;
   }
   
-  .polygon__text {
+  .polygon_text {
     height: 70px;
   }
-  .polygon__oracle__text span {
+  .polygon__oracle_text span {
     margin-top: 50px;
   }
   
