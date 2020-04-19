@@ -3,9 +3,9 @@ import './BeOraclePolygon.scss';
 
 const BeOraclePolygon = () => (
   <div className="be__oracle__container">
-    <div className="oracle_polygon">
+    <div className="oracle__polygon">
       <div className="polygon__oracle__block oracle">
-        <p className="polygon__oracle__text ">
+        <p className="polygon__oracle_text ">
           <span>Come in, rookie! Join the brave decentralized force! </span>
         </p>
       </div>
