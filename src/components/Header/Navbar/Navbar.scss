@@ -1,4 +1,3 @@
-// Navigation styling
 .nav {
   overflow: hidden;
   background: url("./nav-bg.jpg");
@@ -9,8 +8,6 @@
   position: relative;
   justify-content: space-between;
   align-items: center;
-
-
   span {
     display: block;
     position: absolute;
@@ -23,7 +20,6 @@
     transform: rotate(0deg);
     transition: 0.4s ease-in-out;
   }
-
   &__logo {
     width: 50%;
     height: 50%;
@@ -32,14 +28,14 @@
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    &__item {
-      margin: 25px 25px;
-      &__link {
-        text-decoration: none;
-        color: #fff;
-        font-size: 18px;
-        line-height: 24px;
-      }
+  }
+  .menu__item {
+    margin: 25px 25px;
+    &_link {
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+      line-height: 24px;
     }
   }
   .nav__logo {
@@ -52,7 +48,6 @@
 .menu__mobile {
   display: none;
 }
-
 @media (max-width: 968px) {
   .nav {
     display: none;
@@ -70,7 +65,7 @@
     position: absolute;
     right: -200vw;
     top: 0;
-    transition: right 0.8s ;
+    transition: right 0.8s;
     .menu__item {
       margin: 10px auto;
       a {
@@ -120,7 +115,6 @@
     transform: translate(14px, 4px) rotate(45deg);
     transform-origin: right top;
   }
-
   .middle {
     transform: scale(0);
   }
