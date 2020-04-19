@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 import './OracleSearchForm.scss';
 import RequestOption from '../../RequestOption/RequestOption';
 
-const OracleSearchForm = (props) => {
+const OracleSearchForm = ({ client }) => {
   const [button, setButton] = useState(null);
-  const { client } = props;
   const initClient = () => client;
 
   const [buttonStyles] = useState({
@@ -37,7 +36,7 @@ const OracleSearchForm = (props) => {
       <div className="providers__form">
         <form className="form__container">
           <div className="search__article">Provider’s search</div>
-          <div className="button__group group__top">
+          <div className="button__group group_top">
             <RequestOption
               content="Public"
               value="public"
@@ -52,23 +51,23 @@ const OracleSearchForm = (props) => {
             />
           </div>
           <div className="form__row row__top">
-            <input type="text" placeholder="url" className=" inp input__left" />
+            <input type="text" placeholder="url" className=" providers__input input__left" />
             <input
               type="text"
               placeholder="data type"
-              className=" inp input__right"
+              className=" providers__input input__right"
             />
           </div>
           <div className="form__row row__bottom">
             <input
               type="text"
               placeholder="price per call"
-              className=" inp input__left"
+              className=" providers__input input__left"
             />
             <input
               type="text"
               placeholder="valid until"
-              className=" inp input__right"
+              className=" providers__input input__right"
             />
           </div>
           <textarea disabled />
