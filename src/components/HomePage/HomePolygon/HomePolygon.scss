@@ -109,7 +109,7 @@
 
 @media (max-width: 968px) {
 
-  .polygon {
+  .home__polygon {
     background-image: url("./img/Rectangle.png");
     height: 450px;
     display: flex;
@@ -124,7 +124,7 @@
       line-height: 44px;
     }
   }
-  img {
+  .polygon__img {
     visibility: hidden;
     display: none;
   }

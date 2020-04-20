@@ -3,7 +3,7 @@ import './HomePolygon.scss';
 import polygon from './img/Polygon.png';
 
 const HomePolygon = () => (
-  <div className="polygon">
+  <div className="home__polygon">
     <img className="polygon__img" src={polygon} alt="polygon" />
     <div className="polygon__block">
       <h1 className="polygon__article">Cassiopeia</h1>
