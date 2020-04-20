@@ -1,4 +1,4 @@
-.polygon__container {
+.stat-polygon__container {
   position: relative;
   height: 285px;
   background-image: url('./Rectangle.png');
@@ -13,7 +13,7 @@
     z-index: 1;
     background-image: url('./Rectangle.png');
   }
-  .container__article {
+  .stat-polygon__container__article {
     margin: 0 auto;
     width: 45%;
     color: #FFFFFF;

@@ -11,7 +11,7 @@ const element = 'As DAPP developer you should be certain in what your smart cont
 
 const NeedData = () => (
   <div className="data__request">
-    <div className="data__request__img__container">
+    <div className="data__request_img-container">
       <img src={data} alt="data" />
     </div>
     <InfoContainer

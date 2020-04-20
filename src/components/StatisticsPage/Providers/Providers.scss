@@ -1,25 +1,24 @@
 .providers__container {
   margin: 250px auto 250px auto;
 }
-.container__table {
+.providers__container_table {
   background-color: #fff;
   margin: 300px auto 0 auto;
   width: 90%;
   padding: 1.1rem;
-
-  &__wrapper {
-    padding: 20px;
-    width: 100%;
-    margin: 0 auto;
-    border-collapse: collapse;
-  }
+}
+.container__table_wrapper {
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
 }
 
 @media (max-width: 1143px) and (min-width: 968px) {
   .providers__container {
     padding: 0 20px;
   }
-  .container__table {
+  .providers__container_table {
     margin: 200px auto 0 auto;
     width: 95%;
   }
@@ -31,7 +30,7 @@
     padding: 1rem;
   }
 
-  .container__table {
+  .providers__container_table {
     margin: 200px auto 0 auto;
     width: auto;
     padding: 5px;
@@ -81,7 +80,7 @@
     text-align: left;
   }
 
-  .container__table {
+  .providers__container_table {
     max-width: 720px;
   }
   table {

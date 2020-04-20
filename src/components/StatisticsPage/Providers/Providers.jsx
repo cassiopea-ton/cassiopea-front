@@ -10,8 +10,8 @@ const Providers = (props) => {
   console.log(tonClient);
   return (
     <div className="providers__container">
-      <div className="container__table">
-        <table className="container__table__wrapper">
+      <div className="providers__container_table">
+        <table className="container__table_wrapper">
           <StatTableHead />
           <StatTableBody />
         </table>

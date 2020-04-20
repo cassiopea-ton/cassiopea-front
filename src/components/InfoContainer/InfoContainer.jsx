@@ -6,13 +6,12 @@ import RequestButton from '../RequestButton/RequestButton';
 import TransparentButton from '../TransparentButton/TransparentButton';
 
 
-const InfoContainer = (props) => {
-  const {
-    position, text, content, top, element, colorStyle, path,
-  } = props;
+const InfoContainer = ({
+  position, text, content, top, element, colorStyle, path,
+}) => {
   return (
     <div className={`info__wrapper ${position}`}>
-      <h3 className="wrapper__article">{text}</h3>
+      <h3 className="info__wrapper_article">{text}</h3>
       <GenInfo color={colorStyle} top={top} element={element} />
       <RequestButton content={content} path={path} />
       <TransparentButton path="/cassiopea-front/stats" />

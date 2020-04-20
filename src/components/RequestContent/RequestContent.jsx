@@ -5,7 +5,7 @@ import RequestButton from '../RequestButton/RequestButton';
 
 const RequestContent = ({ text, content, path }) => (
   <div className="wrapper__container">
-    <p>{text}</p>
+    <p className="wrapper__container_content">{text}</p>
     <RequestButton content={content} path={path} />
   </div>
 );

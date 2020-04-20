@@ -3,18 +3,18 @@ import "./StatisticsStat.scss";
 
 const Providers = () => (
   <div className="statistics__stat__wrapper">
-       <div className="stats__block dark">
+    <div className="stats__block dark">
       <h3 className="block__article dark">98</h3>
-      <span className="block__element dark">providers</span>
+      <span className="block__element block__element_dark">providers</span>
     </div>
     <div className="stats__block dark">
       <h3 className="block__article dark">100+</h3>
-      <span className="block__element dark">daaps</span>
+      <span className="block__element block__element_dark">daaps</span>
     </div>
     <div className="stats__block dark">
       <h3 className="block__article dark">10382</h3>
-      <span className="block__element dark">requests</span>
-    </div>  
+      <span className="block__element block__element_dark">requests</span>
+    </div>
   </div>
 );
-  export default Providers;
+export default Providers;

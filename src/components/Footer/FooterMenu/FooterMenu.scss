@@ -4,12 +4,12 @@
   justify-content: space-evenly;
   text-align: center;
 
-  .column__article {
+  .menu__column_articl {
     display: block;
     font-size: 18px;
     line-height: 21px;
   }
-  .footer_column {
+  .footer__menu_column {
     width: 33%;
     flex-direction: row;
     z-index: 2;
@@ -22,7 +22,7 @@
     text-decoration: none;
   }
 
-  .column__items {
+  .column__item {
     padding-bottom: 30px;
   }
 
@@ -38,32 +38,31 @@
     display: block;
     margin: 20px auto;
     height: 400px;
-    .column__article {
+    .menu__column_article {
       font-family: "Lato";
       text-align: left;
       font-weight: bold;
       font-size: 16px;
       line-height: 19px;
     }
-    .footer_column {
+    .footer__menu_column {
       display: block;
       align-self: center;
       width: auto;
       text-align: left;
-      .items__block {
+      .menu__items_block {
         display: flex;
         flex-direction: row;
         li {
           width: 52%;
         }
-        .block__col {
+        .block__column {
           width: 130px;
         }
         .col_r {
-         
             text-align: right;
         }
-        .column__items {
+        .column__item {
           display: inline-block;
           font-size: 14px;
           line-height: 17px;
