@@ -24,6 +24,12 @@
 }
 
 @media (max-width: 992px) {
+    .polygon__oracle{
+        background: url();
+    }
+    .polygon__oracle img {
+        visibility: hidden;
+    }
     .container__img img {
         display: none;
     }
@@ -33,5 +39,8 @@
     }
     .container {
         width: auto;
+    }
+    .cons {
+        width: auto !important;
     }
 }

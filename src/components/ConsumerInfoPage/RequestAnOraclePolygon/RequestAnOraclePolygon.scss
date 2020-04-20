@@ -13,14 +13,14 @@
 }
 .polygon__oracle_block {
   margin: 0 auto;
-  padding: 50px 0;
   position: relative;
   z-index: 2;
   color: #ffffff;
+  padding: 50px 0;
   width: 40%;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 .polygon__oracle__article,
 .polygon__oracle_text {
@@ -37,16 +37,24 @@
   margin-bottom: 50px;
 }
 
-.polygon_text {
-  height: 70px;
-}
+
 .polygon__oracle_text span {
   margin-top: 50px;
 }
 
 @media (max-width: 975px) {
   .polygon__oracle_img {
-    height: 568px;
-    width: 100%;
+    visibility: initial;
+  }
+
+  .polygon__oracle_block {
+    display: block;
+    height: 70%;
+  }
+  .polygon__oracle {
+    background: url("./img//Rectangle-bg.png");
+  }
+  .polygon__oracle_text span {
+    margin: 50% auto;
   }
 }
