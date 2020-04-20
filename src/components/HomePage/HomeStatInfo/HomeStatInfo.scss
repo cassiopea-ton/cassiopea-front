@@ -7,12 +7,12 @@
   .stats__block {
     text-align: center;
   }
-  .block__article {
+  .stats__block_article {
     font-size: 24px;
     line-height: 26px;
     color: #b60002;
   }
-  .block__element {
+  .stats__block_elementt {
     font-size: 18px;
     line-height: 21px;
     color: #000000;
@@ -20,8 +20,3 @@
 }
 
 
-@media(max-width: 576px) {
-  .general__stats {
-   
-  }
-}

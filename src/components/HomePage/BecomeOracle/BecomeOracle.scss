@@ -3,27 +3,40 @@
   height: 50rem;
   background-size: cover;
   color: #6882a1;
+  margin-bottom: -200px;
 }
-
+.left {
+  padding: 10rem 2rem;
+}
 @media (max-width: 1140px) {
   .provider__wrapper {
     background: url("./img/becomeOracleMobile.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
+    margin: 0;
   }
   .left {
     padding: 10rem 2rem;
     margin: 0 auto;
+    width: 30rem;
   }
 }
 
 @media (max-width: 968px) {
   .provider__wrapper {
     width: auto;
+    margin: 0;
   }
   .left {
-    width: auto;
+    width: 30rem;
     padding: 2rem 2rem;
+    margin: 0 auto;
+  }
+}
+
+@media(max-width: 568px) {
+  .left {
+    width: auto;
   }
 }

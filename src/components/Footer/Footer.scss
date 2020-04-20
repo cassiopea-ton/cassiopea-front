@@ -6,13 +6,12 @@
   color: #6882a1;
   background-size: cover;
   height: 800px;
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-    position: relative;
-  }
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  position: relative;
 }
 
 @media (max-width: 1140px) {

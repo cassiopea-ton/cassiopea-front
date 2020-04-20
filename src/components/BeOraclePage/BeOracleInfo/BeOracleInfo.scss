@@ -1,33 +1,36 @@
 .be__oracle__info {
   display: flex;
+  width: 100%;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 100px;
 }
 
 .be__oracle__info__img {
-  margin: auto;
+  align-self: center;
 }
-
 .be__oracle__info__img img {
   height: 200px;
 }
-.be__oracle__info__cointainer {
+.be__oracle__info_container {
   display: flex;
-  margin: 0 auto 100px auto;
+  justify-content: center;
+  margin: 0 auto;
 }
 .be__oracle__info__article {
-  width: 710px;
   text-align: center;
+  margin: 0 auto;
 }
 
-.be__oracle__info__button {
+.be-oracle-info__button {
   width: 300px;
   margin: 50px auto;
   height: 80px;
 }
+.oracle__info__container-content {
+  width: 40%;
+}
 
-.be__oracle__info__button__red {
+.be-oracle-info__button_red {
   padding: 20px 70px;
   background-color: rgb(182, 0, 2);
   text-decoration: none;
@@ -35,4 +38,30 @@
   height: 24px;
   border-radius: 30px;
   text-align: center;
+}
+.container__text {
+  width: 75px;
+}
+
+.oracle__info__container-content > .container__text {
+  width: 75%;
+}
+
+@media (max-width: 968px) {
+  .oracle__info__container-content {
+    width: 65%;
+  }
+  .be__oracle__info_container {
+    width: auto;
+  }
+  .be__oracle__info__img {
+    margin: 0;
+    img {
+      display: none;
+    }
+  }
+
+  .container__text {
+    margin: 0 auto;
+  }
 }

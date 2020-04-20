@@ -1,10 +1,10 @@
-.ready__to__join__wrapper {
+.to__join_wrapper {
   display: flex;
   justify-content: center;
   margin-bottom: 20%;
 }
 
-.wrapper__article {
+.to__join_article {
   text-align: center;
   margin-bottom: 4%;
   font-size: 36px;
@@ -15,8 +15,8 @@
 
 .to__join {
   width: 90%;
-  margin: 50px auto;
-  height: 550px;
+  margin: 50px auto 0 auto;
+  height: 500px;
 }
 @media (max-width: 968px) {
   .to__join {
@@ -26,7 +26,7 @@
   }
 }
 @media (max-width: 868px) {
-  .ready__to__join__wrapper {
+  .to__join_wrapper {
     display: block;
   }
 }

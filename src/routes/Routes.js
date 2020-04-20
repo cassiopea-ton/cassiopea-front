@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import ConsumerInfo from "../containers/ConsumerInfo/ConsumerInfo";
 import OracleInfo from "../containers/OracleInfo/OracleInfo";
 import Statistics from "../containers/Statistics/Statistics";
@@ -29,4 +30,9 @@ const Routes = props => {
     </section>
   );
 };
+
+Routes.propTypes = {
+  tonClient:  PropTypes.object,
+};
+
 export default Routes;

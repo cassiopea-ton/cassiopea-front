@@ -1,5 +1,5 @@
 .data__request {
-  padding: 2rem 10%;
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
   &__img__container {
@@ -19,18 +19,17 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 auto;
+    
     img {
       display: none;
     }
     .info__wrapper {
-      width: 80%;
-      justify-content: center;
-    }
-    .right {
+      width: 30rem;
       margin: 0 auto;
     }
+  
   }
-} 
+}
 
 @media (max-width: 768px) {
   .data__request {
@@ -39,7 +38,6 @@
       display: none;
     }
     .info__wrapper {
-      width: 80%;
       justify-content: center;
     }
   }

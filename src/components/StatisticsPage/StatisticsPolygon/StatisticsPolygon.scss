@@ -1,7 +1,7 @@
-.polygon__container {
+.stat-polygon__container {
   position: relative;
   height: 285px;
-  background-color: #091358;
+  background-image: url('./Rectangle.png');
   margin-bottom: 10%;
   &:after {
     content: "";
@@ -11,9 +11,9 @@
     bottom: -130px;
     transform: skewY(7deg);
     z-index: 1;
-    background-color: #091358;
+    background-image: url('./Rectangle.png');
   }
-  .container__article {
+  .stat-polygon__container__article {
     margin: 0 auto;
     width: 45%;
     color: #FFFFFF;
