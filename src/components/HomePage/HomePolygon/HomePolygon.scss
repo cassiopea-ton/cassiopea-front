@@ -1,4 +1,4 @@
-.polygon {
+.home-polygon {
   background-color: #f0f1f4;
   height: 35rem;
   margin-bottom: 30px;
@@ -44,7 +44,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 968px) {
-  .polygon {
+  .home-polygon {
     &__block {
       width: 70%;
     }
@@ -61,8 +61,8 @@
   }
 }
 
-@media (min-width: 468px) and (max-width: 767px) {
-  .polygon {
+@media  (max-width: 767px) {
+  .home-polygon {
     &__block {
       padding: 25px 0;
     }
@@ -108,8 +108,7 @@
 }
 
 @media (max-width: 968px) {
-
-  .polygon {
+  .home-polygon {
     background-image: url("./img/Rectangle.png");
     height: 450px;
     display: flex;
@@ -124,24 +123,9 @@
       line-height: 44px;
     }
   }
-  img {
+  .home-polygon__img {
     visibility: hidden;
     display: none;
   }
 }
 
-@media (max-width: 468px) {
-  .polygon {
-    height: 334px;
-    &__block {
-      width: 50%;
-    }
-    &__article {
-      margin-bottom: 10px;
-    }
-    &__text {
-      line-height: 30px;
-      font-size: 24px;
-    }
-  }
-}

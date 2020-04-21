@@ -1,46 +1,60 @@
-  
-  .polygon__oracle{
-    height: 468px;
+.polygon__oracle {
+  height: 468px;
+}
+
+.polygon__oracle_img {
+  visibility: initial;
+  width: 100%;
+  height: 568px;
+  z-index: 1;
+  position: absolute;
+  margin-top: -130px;
+  display: flex;
+}
+.polygon__oracle_block {
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  padding: 50px 0;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.polygon__oracle__article,
+.polygon__oracle_text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 48px;
+  font-size: 38px;
+}
+.polygon__oracle__article {
+  margin-top: 90px;
+  font-size: 48px;
+  line-height: 58px;
+  margin-bottom: 50px;
+}
+
+
+.polygon__oracle_text span {
+  margin-top: 50px;
+}
+
+@media (max-width: 975px) {
+  .polygon__oracle_img {
+    visibility: initial;
   }
-  
-  .polygon__oracle_img   {
-    width: 100%;
-    height: 568px;
-    z-index: 1;
-    position: absolute;
-    margin-top: -130px;
-    display: flex;
-  }
+
   .polygon__oracle_block {
-    margin: 0 auto;
-    padding: 50px 0;
-    position: relative;
-    z-index: 2;
-    color: #ffffff;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
+    height: 70%;
   }
-  .polygon__oracle__article,
-  .polygon__oracle_text {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    line-height: 48px;
-    font-size: 38px;
-  }
-  .polygon__oracle__article {
-    margin-top: 90px;
-    font-size: 48px;
-    line-height: 58px;
-    margin-bottom: 50px;
-  }
-  
-  .polygon_text {
-    height: 70px;
+  .polygon__oracle {
+    background: url("./img//Rectangle-bg.png");
   }
   .polygon__oracle_text span {
-    margin-top: 50px;
+    margin: 50% auto;
   }
-  
+}

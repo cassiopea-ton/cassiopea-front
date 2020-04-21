@@ -1,12 +1,46 @@
 .how__to__container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
     margin-bottom: 140px;
 }
 .cons {
-    width: 570px!important;
+    width: 570px !important;
     display: block;
     margin: 10px auto;
 }
 
 .howto__article {
     margin-bottom: 20px;
+}
+
+.container {
+    width: 55%;
+}
+
+.container__img {
+    margin-left: 50px;
+    width: 40%;
+}
+
+@media (max-width: 992px) {
+    .polygon__oracle{
+        background: url();
+    }
+    .polygon__oracle img {
+        visibility: hidden;
+    }
+    .container__img img {
+        display: none;
+    }
+    .how__to__container {
+        display: block !important;
+        margin: 0 auto;
+    }
+    .container {
+        width: auto;
+    }
+    .cons {
+        width: auto !important;
+    }
 }

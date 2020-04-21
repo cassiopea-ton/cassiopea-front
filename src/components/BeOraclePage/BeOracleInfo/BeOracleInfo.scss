@@ -41,10 +41,12 @@
 }
 .container__text {
   width: 75px;
+  margin: 20px auto;
 }
 
 .oracle__info__container-content > .container__text {
-  width: 75%;
+  width: auto;
+  max-width: 70%;
 }
 
 @media (max-width: 968px) {
@@ -62,6 +64,6 @@
   }
 
   .container__text {
-    margin: 0 auto;
+    margin: 20px auto;
   }
 }

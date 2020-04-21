@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './OracleSearchForm.scss';
 import RequestOption from '../../RequestOption/RequestOption';
 
-const OracleSearchForm = ({ client }) => {
+const OracleSearchForm = ({client}) => {
   const [button, setButton] = useState(null);
   const initClient = () => client;
 
@@ -29,7 +29,7 @@ const OracleSearchForm = ({ client }) => {
 
   };
   const btnClass = {
-    class_name: 'request__button',
+    class_name: 'request__button_form-bottom',
   };
   return (
     <div className="providers__search__container">
@@ -40,6 +40,7 @@ const OracleSearchForm = ({ client }) => {
             <RequestOption
               content="Public"
               value="public"
+              name="request__button_form"
               buttonColor={button ? buttonStylesDark : buttonStyles}
               onClick={handleClick}
             />
@@ -47,6 +48,7 @@ const OracleSearchForm = ({ client }) => {
               value="private"
               content="Private"
               onClick={handleClick}
+              name="request__button_form"
               buttonColor={button ? buttonStyles : buttonStylesDark}
             />
           </div>

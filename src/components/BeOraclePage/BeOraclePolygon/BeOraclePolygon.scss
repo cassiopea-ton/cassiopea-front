@@ -14,13 +14,50 @@
 }
 .polygon__oracle__article,
 .polygon__oracle_text {
-    padding: 50px 0;
+    padding: 25px 0;
     display: flex;
     flex-direction: column;
     text-align: center;
     line-height: 48px;
     font-size: 38px;
+    color: #fff;
 }
-.polygon__oracle__block {
+.polygon__oracle_block .block-oracle {
     width: 45%;
+}
+.polygon__oracle_block {
+    margin: 0 auto;
+    padding: 50px 0;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .oracle__polygon {
+        margin-bottom: 80px;
+    }
+    
+    .polygon__oracle_text {
+        padding: 0;
+        
+    }
+}
+@media (max-width: 768px) {
+    .polygon__oracle_text {
+       line-height: 38px;
+       font-size: 28px;
+        
+    }
+    .polygon__oracle_text span {
+        margin: 35% auto;
+    }
+    .polygon__oracle_block{
+        display: block;
+        height: 70%;
+    }
 }
