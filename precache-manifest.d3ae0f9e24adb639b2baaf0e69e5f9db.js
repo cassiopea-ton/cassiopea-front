@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bd79797355e5a2a58a8ccf0ea4648e72",
+    "revision": "dd2f2d76f8fdb3c7775d2a58063f81d5",
     "url": "/cassiopea-front/index.html"
   },
   {
-    "revision": "d53e5882be4a0d0197dd",
-    "url": "/cassiopea-front/static/css/main.a1a25032.chunk.css"
+    "revision": "a8459b9b5e27681e89f2",
+    "url": "/cassiopea-front/static/css/main.f6f590a9.chunk.css"
   },
   {
-    "revision": "bb4ade3b9600fa090dca",
-    "url": "/cassiopea-front/static/js/2.6a726b95.chunk.js"
+    "revision": "280a566a0fee6e5ad9c8",
+    "url": "/cassiopea-front/static/js/2.f9cbdbfb.chunk.js"
   },
   {
     "revision": "4d3d17ca1d72509d468eda11f7e92a3e",
-    "url": "/cassiopea-front/static/js/2.6a726b95.chunk.js.LICENSE.txt"
+    "url": "/cassiopea-front/static/js/2.f9cbdbfb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d53e5882be4a0d0197dd",
-    "url": "/cassiopea-front/static/js/main.c72c424a.chunk.js"
+    "revision": "a8459b9b5e27681e89f2",
+    "url": "/cassiopea-front/static/js/main.0003f1b8.chunk.js"
   },
   {
-    "revision": "5695d973b26cde5b0934",
-    "url": "/cassiopea-front/static/js/runtime-main.21d4bf23.js"
+    "revision": "3c3d1233b04eb709c0b8",
+    "url": "/cassiopea-front/static/js/runtime-main.443fa30a.js"
   },
   {
     "revision": "65ca75cb211c63484755bf6cc0ccef02",
@@ -29,11 +29,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "2f951cb7d953e16fd9f6525291bcf723",
-    "url": "/cassiopea-front/static/media/OraclePolygon.2f951cb7.png"
+    "url": "/cassiopea-front/static/media/OraclePolygon1.2f951cb7.png"
   },
   {
     "revision": "9ba3dbf288847bee2213ac7a0294b389",
     "url": "/cassiopea-front/static/media/Polygon.9ba3dbf2.png"
+  },
+  {
+    "revision": "8e8898fd49200274b1d751db2ff6a78e",
+    "url": "/cassiopea-front/static/media/Rectangle-bg.8e8898fd.png"
   },
   {
     "revision": "8e8898fd49200274b1d751db2ff6a78e",

@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/cassiopea-front/static/css/main.a1a25032.chunk.css",
-    "main.js": "/cassiopea-front/static/js/main.c72c424a.chunk.js",
-    "main.js.map": "/cassiopea-front/static/js/main.c72c424a.chunk.js.map",
-    "runtime-main.js": "/cassiopea-front/static/js/runtime-main.21d4bf23.js",
-    "runtime-main.js.map": "/cassiopea-front/static/js/runtime-main.21d4bf23.js.map",
-    "static/js/2.6a726b95.chunk.js": "/cassiopea-front/static/js/2.6a726b95.chunk.js",
-    "static/js/2.6a726b95.chunk.js.map": "/cassiopea-front/static/js/2.6a726b95.chunk.js.map",
+    "main.css": "/cassiopea-front/static/css/main.f6f590a9.chunk.css",
+    "main.js": "/cassiopea-front/static/js/main.0003f1b8.chunk.js",
+    "main.js.map": "/cassiopea-front/static/js/main.0003f1b8.chunk.js.map",
+    "runtime-main.js": "/cassiopea-front/static/js/runtime-main.443fa30a.js",
+    "runtime-main.js.map": "/cassiopea-front/static/js/runtime-main.443fa30a.js.map",
+    "static/js/2.f9cbdbfb.chunk.js": "/cassiopea-front/static/js/2.f9cbdbfb.chunk.js",
+    "static/js/2.f9cbdbfb.chunk.js.map": "/cassiopea-front/static/js/2.f9cbdbfb.chunk.js.map",
     "index.html": "/cassiopea-front/index.html",
-    "precache-manifest.6115d667d05fd94353ad69da75c22a5f.js": "/cassiopea-front/precache-manifest.6115d667d05fd94353ad69da75c22a5f.js",
+    "precache-manifest.d3ae0f9e24adb639b2baaf0e69e5f9db.js": "/cassiopea-front/precache-manifest.d3ae0f9e24adb639b2baaf0e69e5f9db.js",
     "service-worker.js": "/cassiopea-front/service-worker.js",
-    "static/css/main.a1a25032.chunk.css.map": "/cassiopea-front/static/css/main.a1a25032.chunk.css.map",
-    "static/js/2.6a726b95.chunk.js.LICENSE.txt": "/cassiopea-front/static/js/2.6a726b95.chunk.js.LICENSE.txt",
+    "static/css/main.f6f590a9.chunk.css.map": "/cassiopea-front/static/css/main.f6f590a9.chunk.css.map",
+    "static/js/2.f9cbdbfb.chunk.js.LICENSE.txt": "/cassiopea-front/static/js/2.f9cbdbfb.chunk.js.LICENSE.txt",
     "static/media/Footer.scss": "/cassiopea-front/static/media/Footer.65ca75cb.png",
-    "static/media/OraclePolygon.png": "/cassiopea-front/static/media/OraclePolygon.2f951cb7.png",
+    "static/media/OraclePolygon1.png": "/cassiopea-front/static/media/OraclePolygon1.2f951cb7.png",
     "static/media/Polygon.png": "/cassiopea-front/static/media/Polygon.9ba3dbf2.png",
+    "static/media/RequestAnOraclePolygon.scss": "/cassiopea-front/static/media/Rectangle-bg.8e8898fd.png",
     "static/media/BeOraclePolygon.scss": "/cassiopea-front/static/media/Rectangle.8e8898fd.png",
     "static/media/BecomeOracle.scss": "/cassiopea-front/static/media/networkAlt.bd6c2140.png",
     "static/media/header-logo.png": "/cassiopea-front/static/media/header-logo.dfe98d7e.png",
@@ -25,9 +26,9 @@
     "static/media/oracleInfo.png": "/cassiopea-front/static/media/oracleInfo.4b5efe66.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.21d4bf23.js",
-    "static/js/2.6a726b95.chunk.js",
-    "static/css/main.a1a25032.chunk.css",
-    "static/js/main.c72c424a.chunk.js"
+    "static/js/runtime-main.443fa30a.js",
+    "static/js/2.f9cbdbfb.chunk.js",
+    "static/css/main.f6f590a9.chunk.css",
+    "static/js/main.0003f1b8.chunk.js"
   ]
 }
