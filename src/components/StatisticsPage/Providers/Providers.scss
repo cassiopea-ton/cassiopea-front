@@ -35,7 +35,7 @@
     width: auto;
     padding: 5px;
   }
-  .container__table__wrapper thead {
+  .container__table_wrapper thead {
     display: none;
   }
 
@@ -47,29 +47,29 @@
     width: auto;
   }
 
-  .container__table__wrapper td {
+  .container__table_wrapper td {
     display: block;
     width: 100%;
   }
-  .container__table__wrapper tr {
+  .container__table_wrapper tr {
     width: 94%;
   }
-  .container__table__wrapper tbody {
+  .container__table_wrapper tbody {
     display: block;
     width: 90%;
     margin: 0 auto;
     padding-top: 20px;
   }
-  .container__table__wrapper tr {
+  .container__table_wrapper tr {
     margin-bottom: 15px;
   }
-  .container__table__wrapper td {
+  .container__table_wrapper td {
     text-align: right !important;
     padding: 20px;
     position: relative;
     font-size: 16px;
   }
-  .container__table__wrapper td::before {
+  .container__table_wrapper td::before {
     content: attr(data-label);
     position: absolute;
     left: 0;

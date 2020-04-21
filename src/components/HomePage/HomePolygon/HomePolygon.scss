@@ -61,7 +61,7 @@
   }
 }
 
-@media (min-width: 468px) and (max-width: 767px) {
+@media  (max-width: 767px) {
   .home-polygon {
     &__block {
       padding: 25px 0;
@@ -129,18 +129,3 @@
   }
 }
 
-@media (max-width: 468px) {
-  .home__polygon {
-    height: 334px;
-    &__block {
-      width: 50%;
-    }
-    &__article {
-      margin-bottom: 10px;
-    }
-    &__text {
-      line-height: 30px;
-      font-size: 24px;
-    }
-  }
-}
