@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import ConsumerInfo from "../containers/ConsumerInfo/ConsumerInfo";
 import OracleInfo from "../containers/OracleInfo/OracleInfo";
 import Statistics from "../containers/Statistics/Statistics";
@@ -9,7 +9,7 @@ import routePaths from "./routePath";
 import "./routes.scss";
 import BeOracle from "../containers/BeOracle/BeOracle";
 
-const Routes = props => {
+const Routes = (props) => {
   const { tonClient } = props;
 
   return (
@@ -18,13 +18,13 @@ const Routes = props => {
         <Route exact path={routePaths.homePage()} component={Home} />
         <Route
           path={routePaths.statistics()}
-          render={props => <Statistics {...props} client={tonClient} />}
+          render={(props) => <Statistics {...props} client={tonClient} />}
         />
         <Route path={routePaths.oracleInfo()} component={OracleInfo} />
         <Route path={routePaths.beOracle()} component={BeOracle} />
         <Route
           path={routePaths.consumerInfo()}
-          render={props => <ConsumerInfo {...props} client={tonClient} />}
+          render={(props) => <ConsumerInfo {...props} client={tonClient} />}
         />
       </Switch>
     </section>
@@ -32,7 +32,7 @@ const Routes = props => {
 };
 
 Routes.propTypes = {
-  tonClient:  PropTypes.object,
+  tonClient: PropTypes.object,
 };
 
 export default Routes;

@@ -4,7 +4,7 @@
   justify-content: space-evenly;
   text-align: center;
 
-  .menu__column_articl {
+  .menu__column_article {
     display: block;
     font-size: 18px;
     line-height: 21px;
@@ -26,14 +26,18 @@
     padding-bottom: 30px;
   }
 
+  .active {
+    background-color: transparent;
+  }
   a:link,
   a:visited,
-  a:hover {
+  a:hover,
+  .menu__column_article {
     color: #f0f1f4;
   }
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 968px) {
   .footer__menu {
     display: block;
     margin: 20px auto;

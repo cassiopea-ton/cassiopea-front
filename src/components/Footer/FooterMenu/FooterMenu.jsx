@@ -1,27 +1,27 @@
 import React from 'react';
 import './FooterMenu.scss';
 import {
-  Link, BrowserRouter as Router, Switch, Route,
+  NavLink, Link, BrowserRouter as Router, Switch, Route,
 } from 'react-router-dom';
 
 const FooterMenu = () => (
-  <Router>
+
     <div className="footer__menu">
       <div className="footer__menu_column">
-        <Link className="menu__column_article" to="cassiopeia/front">
+        <p className="menu__column_article" >
           Join
-        </Link>
-        <ul className="menu__items__block">
+        </p>
+        <ul className="menu__items_block">
           <div className="block__column col_l">
             <li>
-              <Link className="column__item" to="/cassiopeia/front">
+              <Link className="column__item-" to="/cassiopea-front/be/oracle">
                 Become a provider
               </Link>
             </li>
             <li>
-              <Link className="column__item" to="cassiopeia/front">
+              <NavLink className="column__item" to="/cassiopea-front/howto/consumer/">
                 Request data
-              </Link>
+              </NavLink>
             </li>
           </div>
           <div className="block__column col_r">
@@ -34,28 +34,21 @@ const FooterMenu = () => (
         </ul>
       </div>
       <div className="footer__menu_column">
-        <Link className="menu__column_article" to="cassiopeia/front">
+        <p className="menu__column_article">
           Learn more
-        </Link>
+        </p>
         <ul className="menu__items_block">
           <div className="block__column col_l">
-            <li>
-              <Link className="column__item" to="cassiopeia/fron">
-                Provider instruction
-              </Link>
-            </li>
             <li>
               <Link className="column__item" to="/github">
                 Github
               </Link>
-            </li>
-          </div>
-          <div className="block__column col_r">
-            <li>
               <Link className="column__item" to="/medium">
                 Medium
               </Link>
             </li>
+          </div>
+          <div className="block__column col_r">
             <li>
               <Link className="column__item" to="/twitter">
                 Twitter
@@ -66,11 +59,7 @@ const FooterMenu = () => (
       </div>
       <Switch>
         <Route
-          path="#"
-          component={() => {
-            window.location = 'https://github.com/cassiopea-ton';
-            return null;
-          }}
+          path="/howto/consumer"
         />
         <Route
           path="/github"
@@ -95,7 +84,6 @@ const FooterMenu = () => (
         />
       </Switch>
     </div>
-  </Router>
 );
 
 export default FooterMenu;
