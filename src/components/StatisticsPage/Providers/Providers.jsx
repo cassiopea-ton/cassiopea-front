@@ -5,9 +5,8 @@ import StatTableHead from '../../StatTableHead/StatTableHead';
 import StatTableBody from '../../StatTableBody/StatTableBody';
 import './Providers.scss';
 
-const Providers = (props) => {
-  const { tonClient } = props;
-  console.log(tonClient);
+const Providers = ({ tonClient }) => {
+
   return (
     <div className="providers__container">
       <div className="providers__container_table">
@@ -21,7 +20,7 @@ const Providers = (props) => {
 };
 
 const mapStateToProps = (state) => {
-  console.log(state);
+  console.log(state.tonClient);
   return {
     tonClient: state,
   };
@@ -30,3 +29,6 @@ Providers.propTypes = {
   tonClient: PropTypes.shape.isRequired,
 };
 export default connect(mapStateToProps, null)(Providers);
+
+
+

@@ -41,23 +41,18 @@
     .oracle__polygon {
         margin-bottom: 80px;
     }
-    
+
     .polygon__oracle_text {
         padding: 0;
-        
     }
 }
-@media (max-width: 768px) {
-    .polygon__oracle_text {
-       line-height: 38px;
-       font-size: 28px;
-        
-    }
-    .polygon__oracle_text span {
-        margin: 35% auto;
-    }
-    .polygon__oracle_block{
-        display: block;
-        height: 70%;
-    }
+@media (max-width: 568px) {
+  .polygon__oracle_text {
+      line-height: 38px;
+      font-size: 28px;
+  }
+  .polygon__oracle_block {
+      display: block;
+      height: 70%;
+  }
 }
