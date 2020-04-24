@@ -29,17 +29,6 @@ export const abi = [
   },
 ];
 
-export const tableBodyInfo = [
-  "-1:3451..a155",
-  "public",
-  15,
-  45,
-  "5m ago",
-  "5h",
-  "Currency Pair",
-  "mad.bet.com",
-];
-
 export const tableHeadInfo = [
   "Address",
   "Type",

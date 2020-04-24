@@ -4,15 +4,12 @@ import { connect } from 'react-redux';
 import { Buffer } from 'buffer/';
 import { BagOfCells } from 'cassiopeia-ton-sdk';
 import './StatTableBody.scss';
-import { abi, tableBodyInfo, tableHeadInfo } from './dataStat'
+import { abi, tableHeadInfo } from './dataStat'
 import addDeserializedData from '../../store/actions/dataAction'
 import addAccountAddress from '../../store/actions/addressAction'
 
-const element = tableHeadInfo.map((elem, i) => (
-  <td key={i} data-label={elem}>
-    {tableBodyInfo[i]}
-  </td>
-));
+const registerAddress = "-1:441c478f14f86140604578eabdac3531471273f7e8dbc826e309e9d8b328a1d9";
+
 
 const goThrough = (obj) => {
   let providersObj = {};
@@ -21,29 +18,81 @@ const goThrough = (obj) => {
     providersObj = Object.assign({}, obj[0]);
     oracleObj = Object.assign({}, obj[1]);
   }
-  // console.log('providers')
-  // console.log(providersObj);
-  // console.log('oracle')
-  // console.log(oracleObj);
-  // objectIterator(providersObj);
-  // objectIterator(oracleObj);
+  console.log('providers')
+  console.log(providersObj);
+  console.log('oracle')
+  console.log(oracleObj);
+
+  objectIterator(providersObj);
+  objectIterator1(oracleObj);
 }
 
+// const objectIterator = (iteratedObj) => {
+//   let res = [];
+//   Object.keys(iteratedObj).map(function (key) {
+//     if (key > 0) {
+//       /* global BigInt */
+//       console.log([BigInt(key), iteratedObj[key]])
+//     }
+//     else {
+//       console.log([Number(key), iteratedObj[key]])
+//     }
+//   });
+
+let links = [];
 const objectIterator = (iteratedObj) => {
-  let res = [];
-  // for (const i in iteratedObj) {
-  Object.keys(iteratedObj).map(function (key) {
-    if (key > 0) {
-      /* global BigInt */
-      console.log([BigInt(key), iteratedObj[key]])
+  let arr = Object.keys(iteratedObj).map(i => iteratedObj[i]);
+  let arr1 = Object.keys(arr).map(i => arr[i]);
+  let arr2 = Object.values(arr1);
+  let coinbaseArray = [];
+  let exampleArray = [];
+  for (let i = 0; i < arr1.length; i++) {
+    for (let j = 0; j < arr1.length; j++) {
+      let dataLinkObjects = arr2[i][j];
+      console.log(dataLinkObjects)
+         links = Object.keys(dataLinkObjects);
+      console.log(JSON.parse(JSON.stringify(links)))
+      // dataLinkObjects.forEach(function (linkObject, index) {
+      //   console.log(index);
+      //   console.log(linkObject);
+      // });
     }
-    else {
-      console.log([Number(key), iteratedObj[key]])
-    }
-  });
-  // console.log( iteratedObj[i]);
-  // }
-}
+    console.log(coinbaseArray); // object
+
+    //  let arr2 = (Object.entries(arr1));  //=== ["0", Array(1)]
+    //   console.log(Object.values(arr2));
+
+  }
+};
+
+
+
+const objectIterator1 = (iteratedObj) => {
+  let arr = Object.values(iteratedObj).map(i => iteratedObj[i]);
+  arr.map(x => console.log(x));
+};
+
+const tableBodyInfo = [
+  registerAddress,
+  "public",
+  15,
+  45,
+  "5m ago",
+  "5h",
+  "Currency Pair",
+  links[0],
+];
+console.log(links)
+// "mad.bet.com"
+const element = tableHeadInfo.map((elem, i) => (
+  <td key={i} data-label={elem}>
+    <span>{tableBodyInfo[i]}</span>
+  </td>
+));
+
+
+// console.log( iteratedObj[i]);
+// }
 // const goThrough = (obj) => {
 //   let providersObj = {};
 //   let oracleObj = {};
@@ -57,7 +106,6 @@ const objectIterator = (iteratedObj) => {
 const items = Array(20).fill(element);
 
 const StatTableBody = ({ currentClient, setData, setAccountAddres }) => {
-  const registerAddress = "-1:441c478f14f86140604578eabdac3531471273f7e8dbc826e309e9d8b328a1d9";
 
   setAccountAddres(registerAddress);
 
@@ -81,7 +129,6 @@ const StatTableBody = ({ currentClient, setData, setAccountAddres }) => {
         let data = c.cellDataSlice[0].deserialize(abi);
 
         // TODO:  
-
         //  - display in table
         console.log(JSON.stringify(data));
         console.log(`data keys \n ${goThrough(data)}`)
