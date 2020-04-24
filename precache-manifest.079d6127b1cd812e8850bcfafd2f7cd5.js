@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dd2f2d76f8fdb3c7775d2a58063f81d5",
+    "revision": "790e958069a30b86555625da01935258",
     "url": "/cassiopea-front/index.html"
   },
   {
-    "revision": "a8459b9b5e27681e89f2",
-    "url": "/cassiopea-front/static/css/main.f6f590a9.chunk.css"
+    "revision": "1d3d6ff13dd6a362b8a0",
+    "url": "/cassiopea-front/static/css/main.990fc489.chunk.css"
   },
   {
-    "revision": "280a566a0fee6e5ad9c8",
-    "url": "/cassiopea-front/static/js/2.f9cbdbfb.chunk.js"
+    "revision": "839af5e35fc3db5fe645",
+    "url": "/cassiopea-front/static/js/2.0fd46c4c.chunk.js"
   },
   {
     "revision": "4d3d17ca1d72509d468eda11f7e92a3e",
-    "url": "/cassiopea-front/static/js/2.f9cbdbfb.chunk.js.LICENSE.txt"
+    "url": "/cassiopea-front/static/js/2.0fd46c4c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a8459b9b5e27681e89f2",
-    "url": "/cassiopea-front/static/js/main.0003f1b8.chunk.js"
+    "revision": "1d3d6ff13dd6a362b8a0",
+    "url": "/cassiopea-front/static/js/main.0e8c062e.chunk.js"
   },
   {
     "revision": "3c3d1233b04eb709c0b8",
