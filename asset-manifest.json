@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cassiopea-front/static/css/main.990fc489.chunk.css",
+    "main.css": "/cassiopea-front/static/css/main.4ef9f104.chunk.css",
     "main.js": "/cassiopea-front/static/js/main.0e8c062e.chunk.js",
     "main.js.map": "/cassiopea-front/static/js/main.0e8c062e.chunk.js.map",
     "runtime-main.js": "/cassiopea-front/static/js/runtime-main.443fa30a.js",
@@ -8,9 +8,9 @@
     "static/js/2.0fd46c4c.chunk.js": "/cassiopea-front/static/js/2.0fd46c4c.chunk.js",
     "static/js/2.0fd46c4c.chunk.js.map": "/cassiopea-front/static/js/2.0fd46c4c.chunk.js.map",
     "index.html": "/cassiopea-front/index.html",
-    "precache-manifest.079d6127b1cd812e8850bcfafd2f7cd5.js": "/cassiopea-front/precache-manifest.079d6127b1cd812e8850bcfafd2f7cd5.js",
+    "precache-manifest.28f5b95d0d755c4923978bf1a875a108.js": "/cassiopea-front/precache-manifest.28f5b95d0d755c4923978bf1a875a108.js",
     "service-worker.js": "/cassiopea-front/service-worker.js",
-    "static/css/main.990fc489.chunk.css.map": "/cassiopea-front/static/css/main.990fc489.chunk.css.map",
+    "static/css/main.4ef9f104.chunk.css.map": "/cassiopea-front/static/css/main.4ef9f104.chunk.css.map",
     "static/js/2.0fd46c4c.chunk.js.LICENSE.txt": "/cassiopea-front/static/js/2.0fd46c4c.chunk.js.LICENSE.txt",
     "static/media/Footer.scss": "/cassiopea-front/static/media/Footer.65ca75cb.png",
     "static/media/OraclePolygon1.png": "/cassiopea-front/static/media/OraclePolygon1.2f951cb7.png",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.443fa30a.js",
     "static/js/2.0fd46c4c.chunk.js",
-    "static/css/main.990fc489.chunk.css",
+    "static/css/main.4ef9f104.chunk.css",
     "static/js/main.0e8c062e.chunk.js"
   ]
 }
