@@ -1,3 +1,4 @@
 export const TON_CLIENT_REQUEST_DATA = 'TON_CLIENT_REQUEST_DATA';
 export const TON_CLIENT_SET_DATA = 'TON_CLIENT_SET_DATA';
 export const SET_DATA = 'SET_DATA';
+export const SET_ADDRESS= 'SET_ADDRESS';

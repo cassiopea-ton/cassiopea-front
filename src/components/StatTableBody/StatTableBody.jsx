@@ -6,6 +6,7 @@ import { BagOfCells } from 'cassiopeia-ton-sdk';
 import './StatTableBody.scss';
 import { abi, tableBodyInfo, tableHeadInfo } from './dataStat'
 import addDeserializedData from '../../store/actions/dataAction'
+import addAccountAddress from '../../store/actions/addressAction'
 
 const element = tableHeadInfo.map((elem, i) => (
   <td key={i} data-label={elem}>
@@ -54,9 +55,11 @@ const objectIterator = (iteratedObj) => {
 
 
 const items = Array(20).fill(element);
-const registerAddress = "-1:441c478f14f86140604578eabdac3531471273f7e8dbc826e309e9d8b328a1d9";
-const StatTableBody = ({ currentClient, setData }) => {
 
+const StatTableBody = ({ currentClient, setData, setAccountAddres }) => {
+  const registerAddress = "-1:441c478f14f86140604578eabdac3531471273f7e8dbc826e309e9d8b328a1d9";
+
+  setAccountAddres(registerAddress);
 
   const getAccount = async (client, addr, params = ["code", "data"]) => {
     if (client) {
@@ -80,7 +83,6 @@ const StatTableBody = ({ currentClient, setData }) => {
         // TODO:  
 
         //  - display in table
-        //  - store registerAddress in storage and get it with mapStateToProps
         console.log(JSON.stringify(data));
         console.log(`data keys \n ${goThrough(data)}`)
         console.log(data.flat());
@@ -108,21 +110,21 @@ const mapStateToProps = (state) => {
   console.log(state.deserializeData);
   return {
     currentClient: state.tonClient,
-    deserializedData: state.contractData
+    deserializedData: state.contractData,
+    accAddress: state.accountAddress,
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
     setData: (data) => dispatch(addDeserializedData(data)),
+    setAccountAddres: (accAddres) => dispatch(addAccountAddress(accAddres)),
   }
 }
-
 
 StatTableBody.propTypes = {
   tonClient: PropTypes.shape.isRequired,
 };
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(StatTableBody);
 
