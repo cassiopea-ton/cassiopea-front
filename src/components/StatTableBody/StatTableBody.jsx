@@ -1,33 +1,10 @@
-/* eslint-disable react/no-array-index-key */
-import React from 'react';
-import './StatTableBody.scss';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Buffer } from 'buffer/';
 import { BagOfCells } from 'cassiopeia-ton-sdk';
-import { useEffect } from 'react';
-
-const tableBodyInfo = [
-  '-1:3451..a155',
-  'public',
-  15,
-  45,
-  '5m ago',
-  '5h',
-  'Currency Pair',
-  'mad.bet.com',
-];
-
-const tableHeadInfo = [
-  'Address',
-  'Type',
-  'Min. Oracles ',
-  'Oracle Counter',
-  'Last Update',
-  'Frequency',
-  'Tag',
-  'Source',
-];
+import './StatTableBody.scss';
+import { abi, tableBodyInfo, tableHeadInfo } from './dataStat'
 
 const element = tableHeadInfo.map((elem, i) => (
   <td key={i} data-label={elem}>
@@ -35,41 +12,13 @@ const element = tableHeadInfo.map((elem, i) => (
   </td>
 ));
 
-const abi = [
-  {
-    type: "dict",
-    key: { type: "uint", size: 8 },
-    value: [
-      {
-        type: "prxdict",
-        key: { type: "string", size: 1023 },
-        value: [
-          { type: "int", size: 8 },
-          { type: "uint", size: 256 },
-          { type: "uint", size: 32 },
-          { type: "grams" },
-          { type: "uint", size: 32 }
-        ]
-      }
-    ]
-  },
-  {
-    type: "dict",
-    key: { type: "uint", size: 256 },
-    value: [
-      { type: "uint", size: 32 },
-      { type: "int", size: 32 },
-      { type: "uint", size: 32 },
-      { type: "grams" },
-      { type: "uint", size: 32 }
-    ]
-  }
-];
-
 const items = Array(20).fill(element);
 const registerAddress = "-1:441c478f14f86140604578eabdac3531471273f7e8dbc826e309e9d8b328a1d9";
-const StatTableBody = (props) => {
-  const { tonClient } = props;
+const StatTableBody = ({ currentClient }) => {
+  let [data, setData] = useState(null);
+  setData = (serializedData) => {
+    data = serializedData;
+  }
 
   const getAccount = async (client, addr, params = ["code", "data"]) => {
     if (client) {
@@ -91,21 +40,22 @@ const StatTableBody = (props) => {
         let buffer = Buffer.from(account[0].data, "base64");
         let c = new BagOfCells(buffer);
         let data = c.cellDataSlice[0].deserialize(abi);
+
         // TODO:
         //  - store data to component state
         //  - display in table
         //  - store registerAddress in storage and get it with mapStateToProps
-        //  - optimize mapStateToProps, `tonClient.tonClient.tonClient` is not the best way to get instance
         console.log(JSON.stringify(data));
+        setData(data);
+        console.log(data.flat());
       }
       else {
         return account;
       }
     });
-
-
   };
-  useEffect(() => getStorage(tonClient.tonClient.tonClient));
+  useEffect(() => getStorage(currentClient.tonClient));
+  console.log(currentClient.tonClient);
   return (<tbody>
     {items.map((i, index) => (
       <tr key={index} className="table__info alt">
@@ -115,12 +65,11 @@ const StatTableBody = (props) => {
   </tbody>)
 };
 
-
 const mapStateToProps = (state) => {
   console.log("state");
-  console.log(state);
+  console.log();
   return {
-    tonClient: state,
+    currentClient: state.tonClient,
   };
 };
 
@@ -130,3 +79,4 @@ StatTableBody.propTypes = {
 
 
 export default connect(mapStateToProps, null)(StatTableBody);
+

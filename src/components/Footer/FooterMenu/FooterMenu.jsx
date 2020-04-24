@@ -1,7 +1,7 @@
 import React from 'react';
 import './FooterMenu.scss';
 import {
-  NavLink, Link, BrowserRouter as Router, Switch, Route,
+  NavLink, Link, Switch, Route,
 } from 'react-router-dom';
 
 const FooterMenu = () => (
