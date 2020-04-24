@@ -1,5 +1,6 @@
 .info__block {
   padding: 30px 0;
+  
   .info__block_element{
     font-size: 18px;
     line-height: 22px;
@@ -10,5 +11,13 @@
   }
   .top {
     margin-bottom: 40px;
+  }
+}
+
+
+@media(max-width:1140px) {
+  .info__block {
+    margin: 0 auto;
+    max-width: 30rem;
   }
 }
