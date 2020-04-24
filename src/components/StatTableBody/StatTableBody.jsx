@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Buffer } from 'buffer/';
 import { BagOfCells } from 'cassiopeia-ton-sdk';
 import './StatTableBody.scss';
 import { abi, tableBodyInfo, tableHeadInfo } from './dataStat'
+import addDeserializedData from '../../store/actions/dataAction'
 
 const element = tableHeadInfo.map((elem, i) => (
   <td key={i} data-label={elem}>
@@ -12,22 +13,57 @@ const element = tableHeadInfo.map((elem, i) => (
   </td>
 ));
 
+const goThrough = (obj) => {
+  let providersObj = {};
+  let oracleObj = {};
+  for (const item in obj) {
+    providersObj = Object.assign({}, obj[0]);
+    oracleObj = Object.assign({}, obj[1]);
+  }
+  // console.log('providers')
+  // console.log(providersObj);
+  // console.log('oracle')
+  // console.log(oracleObj);
+  // objectIterator(providersObj);
+  // objectIterator(oracleObj);
+}
+
+const objectIterator = (iteratedObj) => {
+  let res = [];
+  // for (const i in iteratedObj) {
+  Object.keys(iteratedObj).map(function (key) {
+    if (key > 0) {
+      /* global BigInt */
+      console.log([BigInt(key), iteratedObj[key]])
+    }
+    else {
+      console.log([Number(key), iteratedObj[key]])
+    }
+  });
+  // console.log( iteratedObj[i]);
+  // }
+}
+// const goThrough = (obj) => {
+//   let providersObj = {};
+//   let oracleObj = {};
+//   for (const item in obj) {
+//     console.log(`typeof obj:${typeof Object.values(obj[item])}`);
+//     console.log(`  ${item}: ${JSON.stringify(Object.values(obj[item]))}`);
+//   }
+// }
+
+
 const items = Array(20).fill(element);
 const registerAddress = "-1:441c478f14f86140604578eabdac3531471273f7e8dbc826e309e9d8b328a1d9";
-const StatTableBody = ({ currentClient }) => {
-  let [data, setData] = useState(null);
-  setData = (serializedData) => {
-    data = serializedData;
-  }
+const StatTableBody = ({ currentClient, setData }) => {
+
 
   const getAccount = async (client, addr, params = ["code", "data"]) => {
     if (client) {
       return await client.queries.accounts.query(
         {
           acc_type: { eq: 1 },
-          id: {
-            eq: addr
-          }
+          id: { eq: addr }
         },
         params.join(" ")
       );
@@ -41,14 +77,16 @@ const StatTableBody = ({ currentClient }) => {
         let c = new BagOfCells(buffer);
         let data = c.cellDataSlice[0].deserialize(abi);
 
-        // TODO:
-        //  - store data to component state
+        // TODO:  
+
         //  - display in table
         //  - store registerAddress in storage and get it with mapStateToProps
         console.log(JSON.stringify(data));
-        setData(data);
+        console.log(`data keys \n ${goThrough(data)}`)
         console.log(data.flat());
+        setData(data);
       }
+
       else {
         return account;
       }
@@ -67,16 +105,55 @@ const StatTableBody = ({ currentClient }) => {
 
 const mapStateToProps = (state) => {
   console.log("state");
-  console.log();
+  console.log(state.deserializeData);
   return {
     currentClient: state.tonClient,
+    deserializedData: state.contractData
   };
 };
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    setData: (data) => dispatch(addDeserializedData(data)),
+  }
+}
+
 
 StatTableBody.propTypes = {
   tonClient: PropTypes.shape.isRequired,
 };
 
 
-export default connect(mapStateToProps, null)(StatTableBody);
+export default connect(mapStateToProps, mapDispatchToProps)(StatTableBody);
 
+// [
+//   {
+//     "0": [
+//       {
+//         "api.pro.coinbase.com/products/BTC-USD/stats\u0000": [
+//           "255",
+//           "79131962472955613111775533705234716920789278840720323144427443931091911552502",
+//           "100",
+//           0,
+//           "1593648073"
+//         ],
+//         "example.com\u0000": [
+//           "255",
+//           "14644700152385157196097952211346199641940819870959158775473061704731123425432",
+//           "100",
+//           0,
+//           "1593648086"
+//         ]
+//       }
+//     ]
+//   },
+//   {
+//     "112462105348778249932793015892144426282003572374241530499119207627443716810222": [
+//       "1585884923",
+//       "100",
+//       "30000",
+//       0,
+//       "200000500"
+//     ]
+//   }
+// ]
