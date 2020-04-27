@@ -1,8 +1,10 @@
 import { SET_ADDRESS } from "../../constants";
 
-const addAccountAddress = address => ({
+
+const addAccountAddress = (registerAddress) => ({
   type: SET_ADDRESS,
-  payload: address,
+   registerAddress,
+
 });
 
 export default addAccountAddress;

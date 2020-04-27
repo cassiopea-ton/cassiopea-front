@@ -1,64 +1,24 @@
-import React, { useEffect, useLayoutEffect } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { Buffer } from 'buffer/';
-import { BagOfCells } from 'cassiopeia-ton-sdk';
-import './StatTableBody.scss';
+import React, { useEffect } from 'react'
+import { bindActionCreators } from 'redux'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
+import { Buffer } from 'buffer/'
+import { BagOfCells } from 'cassiopeia-ton-sdk'
+import './StatTableBody.scss'
 import { abi, tableHeadInfo } from './dataStat'
 import addDeserializedData from '../../store/actions/dataAction'
 import addAccountAddress from '../../store/actions/addressAction'
-
-const clone = require('rfdc')();
-
-const registerAddress = "-1:441c478f14f86140604578eabdac3531471273f7e8dbc826e309e9d8b328a1d9";
+import goThrough from './goThrough'
+import store from '../../store/index'
+import * as actions from '../../store/actions/index'
+import * as selector from '../../store/selectors/statPageSelectors'
 
 let sourceLinks = [];
 let sourceLinkArray = [];
 let oracleSource = []
-
-const goThrough = (obj) => {
-
-  let providersObj = Object.assign({}, obj[0]);
-  let oracleObj = Object.assign({}, obj[1]);
-  let oracleObjResult = Object.values(oracleObj).flat();
-
-  sourceLinks = Object.keys(oracleObj);
-  console.log(oracleObjResult);
-  oracleSource = Object.values(oracleObj)
-  console.log(oracleSource);
-
-  let providersObjResult = objectIterator(providersObj);
-  console.log(JSON.stringify(providersObj));
-
-  sourceLinks = Object.keys(providersObjResult).flat();
-  sourceLinkArray = Object.values(providersObjResult);
-
-  console.log([sourceLinks, sourceLinkArray, oracleObjResult]);
-
-  return [sourceLinks, sourceLinkArray, oracleObjResult];
-}
-
-const objectIterator = (iteratedObj) => {
-
-  let arr = Object.keys(iteratedObj).map(i => iteratedObj[i]);
-  let arr1 = Object.keys(arr).map(i => arr[i]);
-  let arr2 = Object.values(arr1);
-  let dataLinkObjectsExample = {};
-
-  for (let i = 0; i < arr1.length; i++) {
-    for (let j = 0; j < arr1.length; j++) {
-      let dataLinkObjects = arr2[i][j];
-      dataLinkObjectsExample = { ...dataLinkObjects };
-    }
-  }
-
-  return dataLinkObjectsExample;
-}
-
-const objectIterator1 = (iteratedObj) => {
-  let arr = Object.values(iteratedObj).map(i => iteratedObj[i]);
-  return arr;
-};
+store.dispatch(addAccountAddress("-1:441c478f14f86140604578eabdac3531471273f7e8dbc826e309e9d8b328a1d9"));
+let storage = store.getState();
+let registerAddress = (storage.accountAddressReducer.accountAddress);
 
 const tableBodyInfo = [
   registerAddress,
@@ -113,11 +73,9 @@ const StatTableBody = ({ currentClient, setData, setAccountAddres, deserializedD
     });
   };
 
-  useEffect(() => getStorage(currentClient.tonClient));
   console.log(currentClient.tonClient);
   console.log(deserializedData);
 
-  useEffect(() => setAccountAddres(registerAddress));
   return (<tbody>
     {items.map((i, index) => (
       <tr key={index} className="table__info alt">
@@ -133,17 +91,14 @@ const mapStateToProps = (state) => {
   console.log(state.deserializeData)
 
   return {
-    currentClient: state.tonClient,
-    deserializedData: state.deserializeData,
-    accAddress: state.accountAddressReducer,
+    currentClient: selector.getTonClientSelector,
+    deserializedData: selector.getDeserializedDataSelector,
+    registerAddress: selector.getRegisterAddressSelector,
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
-  return {
-    setData: (info) => dispatch(addDeserializedData(info)),
-    setAccountAddres: (accAddress) => dispatch(addAccountAddress(accAddress)),
-  }
+  const { addDeserializedData } = bindActionCreators(actions, dispatch)
 }
 
 StatTableBody.propTypes = {
