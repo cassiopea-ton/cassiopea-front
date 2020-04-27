@@ -5,7 +5,7 @@ export const accountAddressReducer = (state = {}, action) => {
     case SET_ADDRESS:
       return {
         ...state,
-        accountAddress: action.payload,
+        accountAddress: action.payload
       };
     default:
       return state;

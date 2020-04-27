@@ -11,3 +11,11 @@
 .left {
   width: 38%;
 }
+
+
+@media (max-width: 968px) {
+  .left {
+    margin: 0 auto;
+    padding:0 2rem;
+  }
+}
