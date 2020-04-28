@@ -1,7 +1,8 @@
 
 import objectIterator from './objectIterator'
 const goThrough = (obj) => {
-
+    obj = Object.values(obj);
+    console.log(obj)
     let providersObj = Object.assign({}, obj[0]);
     let oracleObj = Object.assign({}, obj[1]);
     let oracleObjResult = Object.values(oracleObj).flat();

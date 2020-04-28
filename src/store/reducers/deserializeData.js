@@ -5,7 +5,7 @@ export const deserializeData = (state = {}, action) => {
     case SET_DATA:
       return {
         ...state,
-        contractData: action.payload
+        contractData: action.payload,
       };
     default:
       return state;

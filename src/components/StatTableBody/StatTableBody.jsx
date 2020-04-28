@@ -10,8 +10,7 @@ import goThrough from './goThrough'
 import { tableBodyInfo, registerAddress } from './dataStat'
 import addDeserializedData from '../../store/actions/dataAction'
 import { getTonClientSelector, getDeserializedDataSelector, getRegisterAddressSelector } from '../../store/selectors/statPageSelectors'
-
-
+import deserializeData from '../../store/reducers/deserializeData'
 
 const element = tableHeadInfo.map((elem, i) => (
   <td key={i} data-label={elem}>
@@ -73,7 +72,7 @@ const StatTableBody = ({ currentClient, addDeserializeData, deserializedData }) 
         let buffer = Buffer.from(account[0].data, "base64");
         let c = new BagOfCells(buffer);
         let data = c.cellDataSlice[0].deserialize(abi);
-        return data;
+        return goThrough(data);
       }
 
       else {
@@ -84,9 +83,11 @@ const StatTableBody = ({ currentClient, addDeserializeData, deserializedData }) 
 
   useEffect(() => {
     setTimeout(getStorageAlternative, 6000, currentClient.tonClient)
-  });```
-
-
+  });
+  let data = deserializedData;
+  console.log(JSON.stringify(data.contractData));
+  let b = goThrough(data);
+  
   return (<tbody>
     {items.map((i, index) => (
       <tr key={index} className="table__info alt">
@@ -97,9 +98,9 @@ const StatTableBody = ({ currentClient, addDeserializeData, deserializedData }) 
 };
 
 const mapStateToProps = (state) => {
-  // console.log(state.getDeserializedDataSelector)
+  console.log(state.deserializedData)
   // console.log(state.accountAddressReducer)
-  // console.log(state.deserializeData)
+  console.log(getDeserializedDataSelector(state))
 
   return {
     currentClient: getTonClientSelector(state),
