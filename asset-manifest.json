@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cassiopea-front/static/css/main.ed113818.chunk.css",
-    "main.js": "/cassiopea-front/static/js/main.37343ada.chunk.js",
-    "main.js.map": "/cassiopea-front/static/js/main.37343ada.chunk.js.map",
+    "main.js": "/cassiopea-front/static/js/main.afa469af.chunk.js",
+    "main.js.map": "/cassiopea-front/static/js/main.afa469af.chunk.js.map",
     "runtime-main.js": "/cassiopea-front/static/js/runtime-main.443fa30a.js",
     "runtime-main.js.map": "/cassiopea-front/static/js/runtime-main.443fa30a.js.map",
     "static/js/2.5d38742d.chunk.js": "/cassiopea-front/static/js/2.5d38742d.chunk.js",
     "static/js/2.5d38742d.chunk.js.map": "/cassiopea-front/static/js/2.5d38742d.chunk.js.map",
     "index.html": "/cassiopea-front/index.html",
-    "precache-manifest.79776e2e983ad84001a9cd48aaa4c7f9.js": "/cassiopea-front/precache-manifest.79776e2e983ad84001a9cd48aaa4c7f9.js",
+    "precache-manifest.2cb196d0af8aa4a79e498b5cde5a2dbc.js": "/cassiopea-front/precache-manifest.2cb196d0af8aa4a79e498b5cde5a2dbc.js",
     "service-worker.js": "/cassiopea-front/service-worker.js",
     "static/css/main.ed113818.chunk.css.map": "/cassiopea-front/static/css/main.ed113818.chunk.css.map",
     "static/js/2.5d38742d.chunk.js.LICENSE.txt": "/cassiopea-front/static/js/2.5d38742d.chunk.js.LICENSE.txt",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.443fa30a.js",
     "static/js/2.5d38742d.chunk.js",
     "static/css/main.ed113818.chunk.css",
-    "static/js/main.37343ada.chunk.js"
+    "static/js/main.afa469af.chunk.js"
   ]
 }
