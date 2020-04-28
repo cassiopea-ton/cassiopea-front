@@ -82,17 +82,9 @@ const StatTableBody = ({ currentClient, addDeserializeData, deserializedData }) 
     }).then(a=> addDeserializeData(a));
   };
 
-getStorageAlternative(currentClient.tonClient);
-  console.log(currentClient.tonClient);
-  console.log(deserializedData);
-  // useEffect(() => getStorage(currentClient.tonClient));
-
   useEffect(() => {
-    const interval = setInterval(() => {
-      getStorage(currentClient.tonClient);
-    }, 1000);
-    return () => clearInterval(interval);
-  }, []);
+    setTimeout(getStorageAlternative, 6000, currentClient.tonClient)
+  });```
 
 
   return (<tbody>
@@ -127,4 +119,3 @@ StatTableBody.propTypes = {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(StatTableBody);
-
