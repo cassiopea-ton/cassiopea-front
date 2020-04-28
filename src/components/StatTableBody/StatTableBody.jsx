@@ -37,6 +37,7 @@ const StatTableBody = ({ currentClient, addDeserializedData, deserializedData })
   };
 
   const getStorage = (client) => {
+    console.log(client);
     getAccount(client, registerAddress).then((account) => {
       if (account) {
         let buffer = Buffer.from(account[0].data, "base64");
@@ -45,19 +46,20 @@ const StatTableBody = ({ currentClient, addDeserializedData, deserializedData })
 
         // TODO:  
         //  - display in table
-        console.log(JSON.stringify(data));
-        console.log(data);
-        addDeserializedData(data);
+        // addDeserializedData(data);
       }
       else {
         return account;
       }
     });
   };
-  addDeserializedData("Test")
-  console.log(currentClient.tonClient);
-  console.log(deserializedData.deserializeData);
-  useEffect(() => getStorage(currentClient.tonClient));
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      getStorage(currentClient.tonClient);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (<tbody>
     {items.map((i, index) => (
