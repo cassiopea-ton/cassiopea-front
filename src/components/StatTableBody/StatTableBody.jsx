@@ -21,7 +21,7 @@ const element = tableHeadInfo.map((elem, i) => (
 
 const items = Array(20).fill(element);
 
-const StatTableBody = ({ currentClient, addDeserializedData, deserializedData }) => {
+const StatTableBody = ({ currentClient, addDeserializeData, deserializedData }) => {
 
   const getAccount = async (client, addr, params = ["code", "data"]) => {
     if (client) {
@@ -37,7 +37,6 @@ const StatTableBody = ({ currentClient, addDeserializedData, deserializedData })
   };
 
   const getStorage = (client) => {
-    console.log(client);
     getAccount(client, registerAddress).then((account) => {
       if (account) {
         let buffer = Buffer.from(account[0].data, "base64");
@@ -46,7 +45,8 @@ const StatTableBody = ({ currentClient, addDeserializedData, deserializedData })
 
         // TODO:  
         //  - display in table
-        // addDeserializedData(data);
+        console.log(JSON.stringify(data));
+        console.log(data);
       }
       else {
         return account;
@@ -54,12 +54,46 @@ const StatTableBody = ({ currentClient, addDeserializedData, deserializedData })
     });
   };
 
+  const getAccountAlternative = async (client, addr, params = ["code", "data"]) => {
+    if (client) {
+      return await client.queries.accounts.query(
+        {
+          acc_type: { eq: 1 },
+          id: { eq: addr }
+        },
+        params.join(" ")
+      );
+    }
+    return null;
+  };
+
+  const getStorageAlternative = (client) => {
+     getAccountAlternative(client, registerAddress).then((account) => {
+      if (account) {
+        let buffer = Buffer.from(account[0].data, "base64");
+        let c = new BagOfCells(buffer);
+        let data = c.cellDataSlice[0].deserialize(abi);
+        return data;
+      }
+
+      else {
+        return account;
+      }
+    }).then(a=> addDeserializeData(a));
+  };
+
+getStorageAlternative(currentClient.tonClient);
+  console.log(currentClient.tonClient);
+  console.log(deserializedData);
+  // useEffect(() => getStorage(currentClient.tonClient));
+
   useEffect(() => {
     const interval = setInterval(() => {
       getStorage(currentClient.tonClient);
     }, 1000);
     return () => clearInterval(interval);
   }, []);
+
 
   return (<tbody>
     {items.map((i, index) => (
@@ -71,18 +105,22 @@ const StatTableBody = ({ currentClient, addDeserializedData, deserializedData })
 };
 
 const mapStateToProps = (state) => {
-  console.log(state.getDeserializedDataSelector)
-  console.log(state.accountAddressReducer)
-  console.log(state.deserializeData)
+  // console.log(state.getDeserializedDataSelector)
+  // console.log(state.accountAddressReducer)
+  // console.log(state.deserializeData)
 
   return {
-    currentClient: getTonClientSelector,
-    deserializedData: getDeserializedDataSelector,
-    registerAddress: getRegisterAddressSelector,
+    currentClient: getTonClientSelector(state),
+    deserializedData: getDeserializedDataSelector(state),
+    registerAddress: getRegisterAddressSelector(state),
   };
 };
 
-const mapDispatchToProps = (dispatch) => bindActionCreators({ addDeserializedData }, dispatch)
+const mapDispatchToProps = (dispatch) => {
+  return {
+    addDeserializeData: data => dispatch(addDeserializedData(data))
+  }
+}
 
 StatTableBody.propTypes = {
   tonClient: PropTypes.shape.isRequired,
