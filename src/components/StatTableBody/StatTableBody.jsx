@@ -9,82 +9,89 @@ import { abi, tableHeadInfo } from './dataStat'
 import goThrough from './goThrough'
 import { tableBodyInfo, registerAddress } from './dataStat'
 import addDeserializedData from '../../store/actions/dataAction'
-import { getTonClientSelector, getDeserializedDataSelector, getRegisterAddressSelector } from '../../store/selectors/statPageSelectors'
+import { getTonClientSelector, getDeserializedDataSelector, getRegisterAddressSelector, getDeserializedData, getTonClient } from '../../store/selectors/statPageSelectors'
 
-
+console.log(registerAddress)
 
 const element = tableHeadInfo.map((elem, i) => (
-  <td key={i} data-label={elem}>
-    <span>{tableBodyInfo[i]}</span>
-  </td>
+<td key={i} data-label={elem}>
+  <span>{tableBodyInfo[i]}</span>
+</td>
 ));
 
 const items = Array(20).fill(element);
 
 const StatTableBody = ({ currentClient, addDeserializedData, deserializedData }) => {
 
-  const getAccount = async (client, addr, params = ["code", "data"]) => {
-    if (client) {
-      return await client.queries.accounts.query(
-        {
-          acc_type: { eq: 1 },
-          id: { eq: addr }
-        },
-        params.join(" ")
-      );
+const getAccount = async (client, addr, params = ["code", "data"]) => {
+  if (client) {
+    return await client.queries.accounts.query(
+      {
+        acc_type: { eq: 1 },
+        id: { eq: addr }
+      },
+      params.join(" ")
+    );
+  }
+  return null;
+};
+
+const getStorage = (client) => {
+  getAccount(client, registerAddress).then((account) => {
+
+    console.log(registerAddress)
+    if (account) {
+      let buffer = Buffer.from(account[0].data, "base64");
+      let c = new BagOfCells(buffer);
+      let data = c.cellDataSlice[0].deserialize(abi);
+
+      // TODO:  
+      //  - display in table
+      console.log(JSON.stringify(data));
+      console.log(data);
+      addDeserializedData(data);
     }
-    return null;
-  };
+    else {
+      return account;
+    }
+  });
+};
 
-  const getStorage = (client) => {
-    getAccount(client, registerAddress).then((account) => {
-      if (account) {
-        let buffer = Buffer.from(account[0].data, "base64");
-        let c = new BagOfCells(buffer);
-        let data = c.cellDataSlice[0].deserialize(abi);
-
-        // TODO:  
-        //  - display in table
-        console.log(JSON.stringify(data));
-        console.log(data);
-        addDeserializedData(data);
-      }
-      else {
-        return account;
-      }
-    });
-  };
-  addDeserializedData("Test")
-  console.log(currentClient.tonClient);
-  console.log(deserializedData.deserializeData);
-  useEffect(() => getStorage(currentClient.tonClient));
-
-  return (<tbody>
-    {items.map((i, index) => (
-      <tr key={index} className="table__info alt">
-        {i}
-      </tr>
-    ))}
-  </tbody>)
+console.log(currentClient);
+console.log(deserializedData);
+useEffect(() => getStorage(currentClient.tonClient));
+return (<tbody>
+  {items.map((i, index) => (
+    <tr key={index} className="table__info alt">
+      {i}
+    </tr>
+  ))}
+</tbody>)
 };
 
 const mapStateToProps = (state) => {
-  console.log(state.getDeserializedDataSelector)
-  console.log(state.accountAddressReducer)
-  console.log(state.deserializeData)
 
-  return {
-    currentClient: getTonClientSelector,
-    deserializedData: getDeserializedDataSelector,
-    registerAddress: getRegisterAddressSelector,
-  };
+return {
+  currentClient: getTonClientSelector(state),
+  deserializedData: getDeserializedData(state),
+  registerAddress: getRegisterAddressSelector,
+};
 };
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({ addDeserializedData }, dispatch)
 
 StatTableBody.propTypes = {
-  tonClient: PropTypes.shape.isRequired,
+tonClient: PropTypes.shape.isRequired,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(StatTableBody);
 
+
+
+  //mapStateToProps
+  // console.log(getDeserializedData(state))
+  // console.log(state.accountAddressReducer)
+  // console.log(state.deserializeData)
+
+
+    // addDeserializedData("Test")
