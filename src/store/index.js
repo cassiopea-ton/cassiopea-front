@@ -10,7 +10,7 @@ const composeEnhancers =
 const sagaMiddleware = createSagaMiddleware();
 const store = createStore(
   rootReducer,
-  {accountAddress: "-1:441c478f14f86140604578eabdac3531471273f7e8dbc826e309e9d8b328a1d9",},
+  {},
   composeEnhancers(applyMiddleware(sagaMiddleware))
 );
 

@@ -15,5 +15,5 @@ export const getDeserializedDataSelector = createSelector(
 
 export const getRegisterAddressSelector = createSelector(
   getRegisterAddress,
-  (address) => address
+  (address) => Object.values(address)[0]
 );

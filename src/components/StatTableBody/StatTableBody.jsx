@@ -8,10 +8,9 @@ import './StatTableBody.scss'
 import { abi } from './registerAbi'
 import { tableHeadInfo } from './tableHeadInfo'
 import addDeserializedData from '../../store/actions/dataAction'
-import { getTonClientSelector, getDeserializedDataSelector, getRegisterAddressSelector } from '../../store/selectors/statPageSelectors'
+import { getTonClientSelector, getDeserializedDataSelector, getRegisterAddressSelector, getRegisterAddress } from '../../store/selectors/statPageSelectors'
 
 const StatTableBody = ({ currentClient, addDeserializedData, registerAddress, deserializedData }) => {
-
   const getAccount = async (client, addr, params = ["code", "data"]) => {
     if (client) {
       return await client.queries.accounts.query(
@@ -82,6 +81,7 @@ const StatTableBody = ({ currentClient, addDeserializedData, registerAddress, de
 };
 
 const mapStateToProps = (state) => {
+ let address = getRegisterAddress(state);
   return {
     currentClient: getTonClientSelector(state),
     deserializedData: getDeserializedDataSelector(state),

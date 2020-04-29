@@ -20,8 +20,6 @@ const Providers = ({ tonClient }) => {
 };
 
 const mapStateToProps = (state) => {
-  console.log("Providers")
-  console.log(state.tonClient);
   return {
     tonClient: state.tonClient,
   };
