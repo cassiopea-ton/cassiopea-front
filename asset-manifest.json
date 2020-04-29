@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/cassiopea-front/static/css/main.ed113818.chunk.css",
-    "main.js": "/cassiopea-front/static/js/main.afa469af.chunk.js",
-    "main.js.map": "/cassiopea-front/static/js/main.afa469af.chunk.js.map",
+    "main.css": "/cassiopea-front/static/css/main.1eb9909e.chunk.css",
+    "main.js": "/cassiopea-front/static/js/main.b53cda79.chunk.js",
+    "main.js.map": "/cassiopea-front/static/js/main.b53cda79.chunk.js.map",
     "runtime-main.js": "/cassiopea-front/static/js/runtime-main.443fa30a.js",
     "runtime-main.js.map": "/cassiopea-front/static/js/runtime-main.443fa30a.js.map",
-    "static/js/2.5d38742d.chunk.js": "/cassiopea-front/static/js/2.5d38742d.chunk.js",
-    "static/js/2.5d38742d.chunk.js.map": "/cassiopea-front/static/js/2.5d38742d.chunk.js.map",
+    "static/js/2.9e134088.chunk.js": "/cassiopea-front/static/js/2.9e134088.chunk.js",
+    "static/js/2.9e134088.chunk.js.map": "/cassiopea-front/static/js/2.9e134088.chunk.js.map",
     "index.html": "/cassiopea-front/index.html",
-    "precache-manifest.2cb196d0af8aa4a79e498b5cde5a2dbc.js": "/cassiopea-front/precache-manifest.2cb196d0af8aa4a79e498b5cde5a2dbc.js",
+    "precache-manifest.07709e8fbe49f6e4578cea158d5054d4.js": "/cassiopea-front/precache-manifest.07709e8fbe49f6e4578cea158d5054d4.js",
     "service-worker.js": "/cassiopea-front/service-worker.js",
-    "static/css/main.ed113818.chunk.css.map": "/cassiopea-front/static/css/main.ed113818.chunk.css.map",
-    "static/js/2.5d38742d.chunk.js.LICENSE.txt": "/cassiopea-front/static/js/2.5d38742d.chunk.js.LICENSE.txt",
+    "static/css/main.1eb9909e.chunk.css.map": "/cassiopea-front/static/css/main.1eb9909e.chunk.css.map",
+    "static/js/2.9e134088.chunk.js.LICENSE.txt": "/cassiopea-front/static/js/2.9e134088.chunk.js.LICENSE.txt",
     "static/media/Footer.scss": "/cassiopea-front/static/media/Footer.65ca75cb.png",
     "static/media/OraclePolygon1.png": "/cassiopea-front/static/media/OraclePolygon1.2f951cb7.png",
     "static/media/Polygon.png": "/cassiopea-front/static/media/Polygon.9ba3dbf2.png",
@@ -27,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.443fa30a.js",
-    "static/js/2.5d38742d.chunk.js",
-    "static/css/main.ed113818.chunk.css",
-    "static/js/main.afa469af.chunk.js"
+    "static/js/2.9e134088.chunk.js",
+    "static/css/main.1eb9909e.chunk.css",
+    "static/js/main.b53cda79.chunk.js"
   ]
 }
