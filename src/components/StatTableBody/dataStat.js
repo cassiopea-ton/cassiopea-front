@@ -35,11 +35,9 @@ export const abi = [
 export const tableHeadInfo = [
   "Address",
   "Type",
-  "Min. Oracles ",
-  "Oracle Counter",
-  "Last Update",
-  "Frequency",
-  "Tag",
+  "Price ",
+  "Total reward",
+  "Valid Until",
   "Source",
 ];
 
