@@ -37,7 +37,7 @@ export const tableHeadInfo = [
   "Type",
   "Price ",
   "Total reward",
-  "Valid Until",
+  "Valid During",
   "Source",
 ];
 
