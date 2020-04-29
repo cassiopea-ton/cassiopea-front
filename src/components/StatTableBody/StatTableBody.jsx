@@ -11,42 +11,31 @@ import addDeserializedData from '../../store/actions/dataAction'
 import { getTonClientSelector, getDeserializedDataSelector, getRegisterAddressSelector, getRegisterAddress } from '../../store/selectors/statPageSelectors'
 
 const StatTableBody = ({ currentClient, addDeserializedData, registerAddress, deserializedData }) => {
-  const getAccount = async (client, addr, params = ["code", "data"]) => {
-    if (client) {
-      return await client.queries.accounts.query(
+
+  const getData = async (client, addr, params = ["code", "data"]) => {
+    if (client && Object.keys(registerAddress).length) {
+      let account = await client.queries.accounts.query(
         {
           acc_type: { eq: 1 },
           id: { eq: addr }
         },
         params.join(" ")
       );
+      let buffer = Buffer.from(account[0].data, "base64");
+      let c = new BagOfCells(buffer);
+      let data = c.cellDataSlice[0].deserialize(abi);
+      return addDeserializedData(data);
     }
     return null;
   };
 
-  const getStorage = (client) => {
-    getAccount(client, registerAddress).then((account) => {
-      if (account) {
-        let buffer = Buffer.from(account[0].data, "base64");
-        let c = new BagOfCells(buffer);
-        let data = c.cellDataSlice[0].deserialize(abi);
-        return data;
-      }
-
-      else {
-        return account;
-      }
-    }).then(a => addDeserializedData(a));
-  };
-
   useEffect(() => {
-    setTimeout(getStorage, 6000, currentClient.tonClient)
+    setTimeout(getData, 6000, currentClient.tonClient, registerAddress)
   });
 
   let items = []
-  let data = deserializedData;
-  if (data.contractData) {
-    let contractData = data.contractData;
+  if (deserializedData.contractData) {
+    let contractData = deserializedData.contractData;
     let tableBodyInfo = []
     Object.entries(contractData[0]).forEach((typeInfo) => {
       let type = typeInfo[0]
@@ -81,7 +70,7 @@ const StatTableBody = ({ currentClient, addDeserializedData, registerAddress, de
 };
 
 const mapStateToProps = (state) => {
- let address = getRegisterAddress(state);
+  let address = getRegisterAddress(state);
   return {
     currentClient: getTonClientSelector(state),
     deserializedData: getDeserializedDataSelector(state),
