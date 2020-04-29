@@ -44,14 +44,3 @@ export const tableHeadInfo = [
 store.dispatch(addAccountAddress("-1:441c478f14f86140604578eabdac3531471273f7e8dbc826e309e9d8b328a1d9"));
 let storage = store.getState();
 export let registerAddress = (storage.accountAddressReducer.accountAddress);
-
-export const tableBodyInfo = [
-  registerAddress,
-  "public",
-  15,
-  45,
-  "5m ago",
-  "5h",
-  "Currency Pair",
-  null,
-];
