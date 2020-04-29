@@ -5,12 +5,12 @@ import { connect } from 'react-redux'
 import { Buffer } from 'buffer/'
 import { BagOfCells } from 'cassiopeia-ton-sdk'
 import './StatTableBody.scss'
-import { abi, tableHeadInfo } from './dataStat'
-import { registerAddress } from './dataStat'
+import { abi } from './registerAbi'
+import { tableHeadInfo } from './tableHeadInfo'
 import addDeserializedData from '../../store/actions/dataAction'
 import { getTonClientSelector, getDeserializedDataSelector, getRegisterAddressSelector } from '../../store/selectors/statPageSelectors'
 
-const StatTableBody = ({ currentClient, addDeserializedData, deserializedData }) => {
+const StatTableBody = ({ currentClient, addDeserializedData, registerAddress, deserializedData }) => {
 
   const getAccount = async (client, addr, params = ["code", "data"]) => {
     if (client) {
@@ -59,7 +59,7 @@ const StatTableBody = ({ currentClient, addDeserializedData, deserializedData })
           type === "0" ? "public" : "private",
           info[2],
           info[3],
-          parseInt(info[4]/86400000).toString()+" days",
+          parseInt(info[4] / 86400000).toString() + " days",
             source
           ])
         }))
@@ -89,7 +89,7 @@ const mapStateToProps = (state) => {
   };
 };
 
-const mapDispatchToProps = (dispatch) =>  bindActionCreators({ addDeserializedData }, dispatch)
+const mapDispatchToProps = (dispatch) => bindActionCreators({ addDeserializedData }, dispatch)
 
 StatTableBody.propTypes = {
   tonClient: PropTypes.shape.isRequired,

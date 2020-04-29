@@ -1,5 +1,5 @@
 import React from 'react'
-import { tableHeadInfo } from '../StatTableBody/dataStat'
+import { tableHeadInfo } from '../StatTableBody/tableHeadInfo'
 import './StatTableHead.scss'
 
 
