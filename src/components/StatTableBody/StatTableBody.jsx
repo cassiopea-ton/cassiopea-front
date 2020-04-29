@@ -13,7 +13,7 @@ import { getTonClientSelector, getDeserializedDataSelector, getRegisterAddressSe
 const StatTableBody = ({ currentClient, addDeserializedData, registerAddress, deserializedData }) => {
 
   const getData = async (client, addr, params = ["code", "data"]) => {
-    if (client && Object.keys(registerAddress).length) {
+    if (client) {
       let account = await client.queries.accounts.query(
         {
           acc_type: { eq: 1 },
