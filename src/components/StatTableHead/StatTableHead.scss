@@ -1,4 +1,8 @@
-thead th{
-  text-align:  left;
+thead th {
+  text-align: left;
   padding: 0.5rem;
+}
+
+th[data="Source"] {
+  width: 20px;
 }

@@ -26,16 +26,18 @@
 @media (max-width: 968px) {
   .provider__wrapper {
     width: auto;
+    padding: 0 2rem;
     margin: 0;
+    justify-content: center;
   }
   .left {
-    width: 30rem;
-    padding: 2rem 2rem;
+    width: auto;
     margin: 0 auto;
+    padding:2 0rem;
   }
 }
 
-@media(max-width: 568px) {
+@media (max-width: 568px) {
   .left {
     width: auto;
   }

@@ -20,15 +20,16 @@ const Providers = ({ tonClient }) => {
 };
 
 const mapStateToProps = (state) => {
-  console.log(state.tonClient);
   return {
-    tonClient: state,
+    tonClient: state.tonClient,
   };
 };
 Providers.propTypes = {
   tonClient: PropTypes.shape.isRequired,
 };
+
 export default connect(mapStateToProps, null)(Providers);
+
 
 
 

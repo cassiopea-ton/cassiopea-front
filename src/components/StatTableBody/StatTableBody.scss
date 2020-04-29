@@ -1,7 +1,13 @@
 .alt  {
   white-space: nowrap;
 }
-
+td[data-label="Address"] span {
+  width: 6em;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 thead td, tbody td {
   padding: 0.5rem;
 }
