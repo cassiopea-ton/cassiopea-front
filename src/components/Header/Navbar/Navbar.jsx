@@ -54,8 +54,6 @@ const Navbar = () => {
         role="menuitem"
         className={menuClass ? 'gamburger' : 'gamburger gmb__cross'}
         onClick={navHandler}
-        onKeyDown={navHandler}
-        tabIndex={0}
       >
         <span className={menuClass ? '' : 'first'} />
         <span className={menuClass ? '' : 'middle'} />

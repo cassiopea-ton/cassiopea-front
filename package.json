@@ -23,7 +23,7 @@
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
     "rfdc": "1.1.1",
-    "ton-client-web-js": "^0.21.0"
+    "ton-client-web-js": "^0.26.0"
   },
   "scripts": {
     "start": "react-scripts start",

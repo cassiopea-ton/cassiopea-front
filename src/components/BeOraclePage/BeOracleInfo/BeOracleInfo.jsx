@@ -35,7 +35,7 @@ const BeOracleInfo = () => (
         className="request__button be-oracle-info__button_red"
         href="https://github.com/cassiopea-ton/cassiopeia-oracle"
       >
-        Click to download
+          github repo
       </a>
     </div>
   </div>

@@ -109,9 +109,17 @@
     color: #ffffff;
   }
   .menu-active {
+    outline: none;
+    border: 0;
     right: 0;
     position: fixed;
     overflow: hidden;
+  }
+
+  .gamburger .gamburger:focus {
+    outline: none;
+    border: none;
+
   }
   .gamburger {
     position: absolute;
